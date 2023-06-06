@@ -4,6 +4,8 @@ import {
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
+
 function TextShuffle(_txt) {
   var _this = this;
   _this._index = 0;
@@ -36,11 +38,15 @@ function TextShuffle(_txt) {
   }
 }
 
-var texts = [];
+var texts = [],
+    shuffle01_flag = false,
+    shuffle02_flag = false,
+    shuffle03_flag = false,
+    shuffle04_flag = false;
+
 $('.c-text-shuffle--element').each(function(e) {
   texts.push($(this).text());
 });
-console.log(texts);
 
 gsap.to("#shuffle01", {
   scrollTrigger: {
@@ -48,13 +54,16 @@ gsap.to("#shuffle01", {
     start: 'top bottom',
     invalidateOnRefresh: true,
     onEnter: function() {
-      const shuffle_targets = $('#shuffle01').find('.c-text-shuffle--element');
-      let i=0;
-      for (let index = 0; index < 3; index++) {
-        const element = shuffle_targets[i];
-        var _shuffle = new TextShuffle(element);
-        _shuffle.to(texts[index], 1.2);
-        i++;
+      if(!shuffle01_flag) {
+        shuffle01_flag = true;
+        const shuffle_targets = $('#shuffle01').find('.c-text-shuffle--element');
+        let i=0;
+        for (let index = 0; index < 3; index++) {
+          const element = shuffle_targets[i];
+          var _shuffle = new TextShuffle(element);
+          _shuffle.to(texts[index], 1.2);
+          i++;
+        }
       }
     }
   },
@@ -67,13 +76,16 @@ gsap.to("#shuffle02", {
     start: 'top bottom',
     invalidateOnRefresh: true,
     onEnter: function() {
-      const shuffle_targets = $('#shuffle02').find('.c-text-shuffle--element');
-      let i=0;
-      for (let index = 3; index < 6; index++) {
-        const element = shuffle_targets[i];
-        var _shuffle = new TextShuffle(element);
-        _shuffle.to(texts[index], 1.2);
-        i++;
+      if(!shuffle02_flag) {
+        shuffle02_flag = true;
+        const shuffle_targets = $('#shuffle02').find('.c-text-shuffle--element');
+        let i=0;
+        for (let index = 3; index < 6; index++) {
+          const element = shuffle_targets[i];
+          var _shuffle = new TextShuffle(element);
+          _shuffle.to(texts[index], 1.2);
+          i++;
+        }
       }
     }
   },
@@ -85,13 +97,16 @@ gsap.to("#shuffle03", {
     start: 'top bottom',
     invalidateOnRefresh: true,
     onEnter: function() {
-      const shuffle_targets = $('#shuffle03').find('.c-text-shuffle--element');
-      let i=0;
-      for (let index = 6; index < 9; index++) {
-        const element = shuffle_targets[i];
-        var _shuffle = new TextShuffle(element);
-        _shuffle.to(texts[index], 1.2);
-        i++;
+      if(!shuffle03_flag) {
+        shuffle03_flag = true;
+        const shuffle_targets = $('#shuffle03').find('.c-text-shuffle--element');
+        let i=0;
+        for (let index = 6; index < 9; index++) {
+          const element = shuffle_targets[i];
+          var _shuffle = new TextShuffle(element);
+          _shuffle.to(texts[index], 1.2);
+          i++;
+        }
       }
     }
   },
@@ -103,13 +118,16 @@ gsap.to("#shuffle04", {
     start: 'top bottom',
     invalidateOnRefresh: true,
     onEnter: function() {
-      const shuffle_targets = $('#shuffle04').find('.c-text-shuffle--element');
-      let i=0;
-      for (let index = 9; index < 12; index++) {
-        const element = shuffle_targets[i];
-        var _shuffle = new TextShuffle(element);
-        _shuffle.to(texts[index], 1.2);
-        i++;
+      if(!shuffle04_flag) {
+        shuffle04_flag = true;
+        const shuffle_targets = $('#shuffle04').find('.c-text-shuffle--element');
+        let i=0;
+        for (let index = 9; index < 12; index++) {
+          const element = shuffle_targets[i];
+          var _shuffle = new TextShuffle(element);
+          _shuffle.to(texts[index], 1.2);
+          i++;
+        }
       }
     }
   },

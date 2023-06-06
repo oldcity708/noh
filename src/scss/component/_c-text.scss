@@ -1,4 +1,24 @@
 .c-text-shuffle {
+  &#shuffle01 {
+    @include PC {
+      height: 148px;
+    }
+  }
+  &#shuffle02 {
+    @include PC {
+      height: 148px;
+    }
+  }
+  &#shuffle03 {
+    @include PC {
+      height: 148px;
+    }
+  }
+  &#shuffle04 {
+    @include PC {
+      height: 148px;
+    }
+  }
   &--element {
     font-family: $proxima;
     @include font-size(38);

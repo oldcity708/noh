@@ -43,39 +43,6 @@ $(function () {
   TypingAnime();
 
 
-  // function drawSVG() {
-  //   const tl = new TimelineMax();
-  //   tl.add('start')
-  //     .to(letters, 0.2, {
-  //       autoAlpha: 1
-  //   })
-  //     .staggerFrom(letters, 0.8, {
-  //       drawSVG: 0,
-  //       ease: Bounce.easeOut
-  //   }, 0.3);
-    
-  //   return tl;
-  // }
-
-  // var tl = new TimelineLite();
-  // TweenLite.set("circle", {stroke:"red", strokeWidth:6});
-  // tl.from("circle", 2, {drawSVG:0})
-
-  // tl.timeScale(2);
-
-
-
-  // TweenLite.fromTo("#path", 1, {
-  //   drawSVG:"0 5%"
-  // }, {
-  //   drawSVG:"95% 100%"
-  // });
-
-
-  var path01 = $(".path01");
-
-
-
 
 
 });

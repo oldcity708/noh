@@ -48,7 +48,7 @@ include $path.'/libs/meta.php';
                     </svg>
                 </div>
                 <div class="left">
-                    <div class="c-text-shuffle">
+                    <div class="c-text-shuffle" id="shuffle01">
                         <h2>
                             <span class="c-text-shuffle--element">The intersection of</span>
                             <span class="c-text-shuffle--element">Japanese culture</span><br>
@@ -174,7 +174,7 @@ include $path.'/libs/meta.php';
                 </div>
                 <div class="left">
                     <span class="c-sub-ttl">( XRT TECHNOLOGY - PHYGITAL ASSET )</span>
-                    <div class="c-text-shuffle">
+                    <div class="c-text-shuffle" id="shuffle02">
                         <h2>
                             <span class="c-text-shuffle--element">The intersection of</span>
                             <span class="c-text-shuffle--element">Japanese culture</span><br>
@@ -209,7 +209,7 @@ include $path.'/libs/meta.php';
                 </div>
                 <div class="text">
                     <span class="c-sub-ttl">( XRT TECHNOLOGY - CHIP )</span>
-                    <div class="c-text-shuffle">
+                    <div class="c-text-shuffle" id="shuffle03">
                         <h2>
                             <span class="c-text-shuffle--element">The intersection of</span><br>
                             <span class="c-text-shuffle--element">Japanese culture</span><br>
@@ -356,7 +356,7 @@ include $path.'/libs/meta.php';
         <div class="inner">
             <div class="effect__text">
                 <span class="c-sub-ttl">( XRT TECHNOLOGY - AR EFFECT )</span>
-                <div class="c-text-shuffle">
+                <div class="c-text-shuffle" id="shuffle04">
                     <h2>
                         <span class="c-text-shuffle--element">The intersection of</span>
                         <span class="c-text-shuffle--element">Japanese culture</span>

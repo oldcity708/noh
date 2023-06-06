@@ -16,7 +16,18 @@ gsap.set("#path01,#path02,#path03", {
   visibility:"visible"
 });
 
+// gsap.to("#path01,#path02,#path03", {
+//   drawSVG : '100%',
+//   duration: 1.4,
+//   ease:"power1.inOut"
+// });
 gsap.to("#path01,#path02,#path03", {
+  scrollTrigger: {
+    trigger: '.draw-svgs',
+    start: 'top bottom',
+    end: 'top bottom',
+    markers: true,
+  },
   drawSVG : '100%',
   duration: 1.4,
   ease:"power1.inOut"

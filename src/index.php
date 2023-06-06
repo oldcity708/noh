@@ -323,6 +323,9 @@ include $path.'/libs/meta.php';
                         <span class="xrt__logo">
                             <img src="./images/common/logo_xrt_02.svg" alt="">
                         </span>
+                        <div class="square">
+                            <div class="triangle"></div>
+                        </div>
                     </div>
                     <span class="name">( NOH - RYUJIN )</span>
                 </li>
@@ -348,7 +351,9 @@ include $path.'/libs/meta.php';
                         <img src="./images/common/grap_kocho.svg" alt="">
                     </div>
                     <div class="xrt">
-                        <img src="./images/common/logo_xrt_02.svg" alt="">
+                        <span class="xrt__logo">
+                            <img src="./images/common/logo_xrt_02.svg" alt="">
+                        </span>
                     </div>
                     <span class="name">( NOH - KOCHO )</span>
                 </li>

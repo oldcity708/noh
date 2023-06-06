@@ -25,7 +25,9 @@ gsap.to("#path01,#path02,#path03", {
   scrollTrigger: {
     trigger: '.draw-svgs',
     start: 'top bottom',
+    // end: 'bottom top',
     end: 'top bottom',
+    // scrub: true,
     markers: true,
   },
   drawSVG : '100%',

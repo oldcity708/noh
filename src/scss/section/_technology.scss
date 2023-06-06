@@ -1,0 +1,48 @@
+.technology {
+  padding: 64px 0 76px;
+
+  &__read {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 83px;
+    padding-bottom: 104px;
+
+    .draw-svgs {
+      position: absolute;
+      width: 100%;
+      top: 0px;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      z-index: 0;
+    }
+
+    .left {
+      max-width: 480px;
+      width: 44.4444%;
+      text-align: right;
+      position: relative;
+    }
+
+    .right {
+      max-width: 480px;
+      width: 44.4444%;
+      margin-top: 128px;
+      position: relative;
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: space-between;
+
+    .img01 {
+      width: 38.8889%;
+    }
+
+    .img02 {
+      width: 59.6296%;
+    }
+  }
+}

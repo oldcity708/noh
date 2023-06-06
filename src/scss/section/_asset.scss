@@ -1,0 +1,56 @@
+.asset {
+  padding: 32px 0 135px;
+  overflow: hidden;
+  &__logo {
+    width: 98px;
+    margin: 0 auto 64px;
+  }
+
+  &__scroll-text {
+    .scroll-wrap {}
+  }
+
+  .cont {
+    margin-top: 134px;
+
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      .doll {
+        position: absolute;
+        width: 220px;
+        top: -180px;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+
+      .left {
+        width: 33.3333%;
+        text-align: right;
+
+        .c-sub-ttl {
+          margin-bottom: 32px;
+          display: block;
+        }
+      }
+
+      .right {
+        width: 33.3333%;
+        padding-top: 48px;
+
+        .thumb-asset {
+          margin-top: 48px;
+          display: flex;
+          flex-wrap: wrap;
+
+          .thumb {
+            width: 100px;
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+  }
+}

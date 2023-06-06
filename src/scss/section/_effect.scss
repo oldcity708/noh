@@ -1,0 +1,133 @@
+.effect {
+  padding: 80px 0 76px;
+
+  &__text {
+    max-width: 420px;
+    margin-bottom: 120px;
+
+    .c-sub-ttl {
+      display: block;
+      margin-bottom: 32px;
+    }
+
+    .c-text-shuffle {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      position: relative;
+      width: 27.7778%;
+      padding-top: 50%;
+      border: solid 4px rgba(252, 250, 242, 0.3);
+      border-radius: 24px;
+      background: url(../images/top/effect_img_01.png) 50%/ cover border-box
+        /* background-origin */
+        padding-box
+        /* background-clip */
+      ;
+
+      &:before {
+        position: absolute;
+        z-index: -1;
+        top: -4px;
+        right: -4px;
+        bottom: -4px;
+        left: -4px;
+        border: inherit;
+        border-color: transparent;
+        background: inherit;
+        background-clip: border-box;
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+        content: '';
+        -webkit-clip-path: inset(0);
+        clip-path: inset(0 round 24px);
+        border-radius: 24px;
+      }
+
+      .img {
+        display: none;
+      }
+
+      .grap {
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+        z-index: +1;
+      }
+
+      .xrt {
+        width: 88px;
+        height: 88px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        .square {
+          // width: 88px;
+          // height: 88px;
+          // position: absolute;
+          // border-radius: 0 0 0 24px;
+          // overflow:hidden;
+          // left: -4px;
+          // bottom: -4px;
+          // backdrop-filter: blur(10px);
+          // -webkit-backdrop-filter: blur(10px);
+        }
+
+        .triangle {
+          position: absolute;
+          left: -4px;
+          bottom: -4px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 88px 88px 0;
+          border-radius: 0 0 0 24px;
+          border-color: transparent transparent rgba(252, 250, 242, 0.3) transparent;
+          background: transparent;
+          // filter: blur(4px);
+          // clip-path: inset(0 round 24px);
+        }
+
+        &__logo {
+          width: 52px;
+          position: absolute;
+          left: 4px;
+          bottom: 8px;
+        }
+      }
+
+      .name {
+        position: absolute;
+        top: 0;
+        right: -30px;
+        @include font-size(12);
+        font-weight: $proxima;
+        font-weight: 400;
+        letter-spacing: .05em;
+        -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        color: #8E909A;
+      }
+    }
+  }
+
+  .message {
+    margin-top: 152px;
+    @include font-size(38);
+    line-height: 1.3;
+    letter-spacing: .02em;
+    color: #4D4F5A;
+    font-family: $proxima;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+  }
+}

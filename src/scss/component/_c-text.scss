@@ -1,5 +1,6 @@
 .c-text-shuffle {
   &--element {
+    font-family: $proxima;
     @include font-size(38);
     letter-spacing: .02em;
     font-weight: 600;
@@ -10,7 +11,7 @@
 .c-sub-ttl {
   @include font-size(12);
   letter-spacing: .05em;
-  font-family: $proima;
+  font-family: $proxima;
   font-weight: 400;
   color: #8E909A;
 }

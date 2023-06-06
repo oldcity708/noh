@@ -1,0 +1,32 @@
+.look {
+  padding: 76px 0;
+
+  &__scroll {
+    padding: 16px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .img-wrap {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      animation-name: scrollEn2;
+      animation-fill-mode: backwards;
+      animation-duration: 60s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    .img {
+      width: 360px;
+      margin: 0 30px;
+
+      &:nth-of-type(2n) {
+        width: 420px;
+      }
+    }
+  }
+}

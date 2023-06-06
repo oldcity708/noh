@@ -1,0 +1,142 @@
+.chip {
+  padding: 135px 0 80px;
+
+  .cont-01 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 60px;
+    min-height: 608px;
+    background: url(../images/top/chip_article.png)center center/cover no-repeat;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 1px solid #4D4F5A;
+      backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
+      background: rgba(8, 14, 10, 0.1);
+      border-radius: 24px;
+    }
+
+    .img {
+      width: 50%;
+      position: absolute;
+      bottom: 0;
+      left: 60px;
+    }
+
+    .text {
+      width: 37.5%;
+      position: relative;
+
+      .c-sub-ttl {
+        display: block;
+        margin-bottom: 32px;
+      }
+
+      .c-text-shuffle {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .cont-02 {
+    width: 59.44444444%;
+    border: 1px solid #4D4F5A;
+    border-radius: 24px;
+
+    .row {
+      padding: 16px 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      white-space: nowrap;
+
+      &:last-of-type {
+        &:after {
+          content: none;
+        }
+      }
+
+      &:after {
+        content: "";
+        width: calc(100% - 48px);
+        height: 1px;
+        display: block;
+        background: #4D4F5A;
+        margin: 0 auto;
+        position: absolute;
+        left: 24px;
+        bottom: 0;
+      }
+
+      &__item {
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        animation-name: scrollEn;
+        animation-fill-mode: backwards;
+        animation-duration: 80s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        &.row02 {
+          animation-name: scrollEn2;
+
+          .img {
+            width: 535px;
+          }
+        }
+
+        &.row03 {
+          .img {
+            width: 639px;
+          }
+        }
+
+        .img {
+          width: 652px;
+          margin-right: 0;
+        }
+      }
+
+      @keyframes scrollEn {
+        0% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(0%);
+        }
+      }
+
+      @keyframes scrollEn2 {
+        0% {
+          transform: translateX(0%);
+        }
+
+        100% {
+          transform: translateX(-25%);
+        }
+      }
+    }
+  }
+
+  .cont-03 {
+    width: 38.8889%;
+  }
+
+  .col2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+}

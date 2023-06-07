@@ -33,6 +33,14 @@
       width: 30%;
       margin-right: 16px;
       position: relative;
+      &.swiper-slide-thumb-active {
+        .progress-bar {
+          animation-name: progress;
+          animation-fill-mode: backwards;
+          animation-duration: 6s;
+          animation-timing-function: linear;
+        }
+      }
       .progress-bar {
         position: absolute;
         left: 0;
@@ -41,6 +49,15 @@
         background: #95FE1A;
         display: block;
         transition: width 0.3s ease;
+        width: 0;
+      }
+      @keyframes progress {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 100%;
+        }
       }
     }
   }

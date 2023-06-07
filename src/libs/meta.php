@@ -69,7 +69,7 @@
 <!-- Swiper
 ======================================================================-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-<link rel="stylesheet" href="https://unpkg.com/swiper/css/thumbs.min.css">
+
 
 <!-- CSS
 ======================================================================-->

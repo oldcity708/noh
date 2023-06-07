@@ -39,6 +39,14 @@
       align-items: center;
       justify-content: center;
       margin-left: 36px;
+      position: relative;
+      cursor: pointer;
+      &:hover {
+        .lang__list {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
       span {
         @include font-size(16);
         letter-spacing: 0.05em;
@@ -55,6 +63,36 @@
           display: inline-block;
           background: url(../images/common/arrow_bottom.svg)center center/cover no-repeat;
           margin-left: 8px;
+        }
+      }
+      &__list {
+        position: absolute;
+        top: 36px;
+        left: 0;
+        width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        transition: .3s;
+        opacity: 0;
+        visibility: hidden;
+        li {
+          @include font-size(16);
+          letter-spacing: 0.05em;
+          font-weight: 600;
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 34px;
+            background: #000;
+            color: #fff;
+            font-family: $proxima;
+            font-weight: 600;
+            transition: .3s;
+            &:hover {
+              background: #95FE1A;
+            }
+          }
         }
       }
     }

@@ -23,6 +23,14 @@
             </ul>
             <div class="lang">
                 <span>JP</span>
+                <ul class="lang__list">
+                    <li class="disable">
+                        <a href="">JP</a>
+                    </li>
+                    <li>
+                        <a href="">EN</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

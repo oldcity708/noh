@@ -9,7 +9,9 @@
     background: $screen-background;
     position: relative;
     overflow: hidden;
-    cursor: url(../images/common/btn_play.svg) 96 96, auto;
+    cursor: none;
+    border-radius: 24px;
+    // cursor: url(../images/common/btn_play.svg) 96 96, auto;
     &:after {
       content: ' ';
       display: block;
@@ -72,5 +74,24 @@
       top: 26px;
       right: 26px;
     }
+  }
+}
+
+#cursor{
+	position: fixed;
+  /*丸の大きさと色の指定*/
+  background: url(../images/common/btn_play.svg)center center/cover no-repeat;
+  border-radius:50%;
+  display: block;
+	width: 96px;
+	height: 96px;
+	margin: -48px 0 0 -48px;/*真ん中にくるようにマイナスマージンで調整*/
+  z-index: 2;/*一番手前に来るように*/
+	pointer-events: none;/*クリックできなくなるのを防ぐため。noneで対応*/
+	opacity: 0;
+  transform: scale(0);
+  transition: transform 0.3s;/*アニメーションの秒数指定*/
+  &.active {
+    transform: scale(1);
   }
 }

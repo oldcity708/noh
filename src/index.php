@@ -24,6 +24,8 @@ include $path.'/libs/meta.php';
   </div>
 
 
+  <div id="cursor"></div>
+
   <div class="movie">
     <div class="inner">
       <div class="movie__movie">
@@ -86,20 +88,22 @@ include $path.'/libs/meta.php';
         <ul class="fashion__list">
           <li>
             <a href="">
-              <div class="img">
-                <div class="thumb"><img src="./images/top/fashion_img_01.png" alt=""></div>
-                <video loop="" class="video" preload="none" data-v-c0b4d82e=""><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4" data-v-c0b4d82e=""></video>
-                <div class="tag">
-                  <div class="tag-list">
-                    <span>NFC TAG</span>
-                    <span>XR</span>
+              <div class="image-wrap">
+                <div class="image">
+                  <div class="thumb"><img src="./images/top/alien.png" alt=""></div>
+                  <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
+                  <div class="tag">
+                    <div class="tag-list">
+                      <span>NFC TAG</span>
+                      <span>XR</span>
+                    </div>
+                    <div class="tag-list">
+                      <span>現実</span>
+                    </div>
                   </div>
-                  <div class="tag-list">
-                    <span>現実</span>
+                  <div class="bottom">
+                    <span>PHYSICAL ASSET</span>
                   </div>
-                </div>
-                <div class="bottom">
-                  <span>PHYSICAL ASSET</span>
                 </div>
               </div>
               <div class="text">
@@ -109,18 +113,20 @@ include $path.'/libs/meta.php';
           </li>
           <li>
             <a href="">
-              <div class="img">
-                <div class="thumb"><img src="./images/top/fashion_img_02.png" alt=""></div>
-                <div class="tag">
-                  <div class="tag-list">
-                    <span>NFC</span>
+              <div class="image-wrap">
+                <div class="image">
+                  <div class="thumb"><img src="./images/top/fashion_img_02.png" alt=""></div>
+                  <div class="tag">
+                    <div class="tag-list">
+                      <span>NFC</span>
+                    </div>
+                    <div class="tag-list">
+                      <span>所有証明&キー</span>
+                    </div>
                   </div>
-                  <div class="tag-list">
-                    <span>所有証明&キー</span>
+                  <div class="bottom">
+                    <span>PHYSICAL ASSET</span>
                   </div>
-                </div>
-                <div class="bottom">
-                  <span>PHYSICAL ASSET</span>
                 </div>
               </div>
               <div class="text">
@@ -130,18 +136,20 @@ include $path.'/libs/meta.php';
           </li>
           <li>
             <a href="">
-              <div class="img">
-                <div class="thumb"><img src="./images/top/fashion_img_03.png" alt=""></div>
-                <div class="tag">
-                  <div class="tag-list">
-                    <span>METAVERSE</span>
+              <div class="image-wrap">
+                <div class="image">
+                  <div class="thumb"><img src="./images/top/fashion_img_03.png" alt=""></div>
+                  <div class="tag">
+                    <div class="tag-list">
+                      <span>METAVERSE</span>
+                    </div>
+                    <div class="tag-list">
+                      <span>デジタルワールド</span>
+                    </div>
                   </div>
-                  <div class="tag-list">
-                    <span>デジタルワールド</span>
-                  </div>
-                </div>
-                <div class="bottom">
-                  <span>DIGITAL ASSET</span>
+                  <div class="bottom">
+                    <span>DIGITAL ASSET</span>
+                  </div>  
                 </div>
               </div>
               <div class="text">
@@ -158,7 +166,7 @@ include $path.'/libs/meta.php';
   <section class="asset">
     <div class="asset__logo"><img src="./images/common/logo_xrt_01.svg" alt=""></div>
     <div class="asset__scroll-text">
-      <div class="scroll-wrap"><img src="./images/top/asset_scroll-text.svg" alt="Connecting Real and Digital Communication."></div>
+      <div class="scroll-wrap"><img src="./images/top/asset_scroll-text.svg" alt="Connecting Real and Digital Communication."><img src="./images/top/asset_scroll-text.svg" alt="Connecting Real and Digital Communication."></div>
     </div>
     <div class="cont">
       <div class="inner">
@@ -193,6 +201,7 @@ include $path.'/libs/meta.php';
             <div class="swiper-wrapper">
               <div class="asset__thumb-slider__slide swiper-slide">
                 <img src="./images/top/asset_img_01.jpg" alt="">
+                <span class="progress-bar"></span>
               </div>
               <div class="asset__thumb-slider__slide swiper-slide">
                 <img src="./images/top/asset_img_01.jpg" alt="">
@@ -203,9 +212,6 @@ include $path.'/libs/meta.php';
                 <span class="progress-bar"></span>
               </div>
             </div>
-          </div>
-          <div class="bar">
-            <span></span>
           </div>
         </div>
       </div>

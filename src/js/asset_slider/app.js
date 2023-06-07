@@ -1,41 +1,61 @@
-// const bar = document.querySelector(".bar span");
+/** GSAP */
+import {
+  gsap,
+} from 'gsap';
 
-const dollSwiper = new Swiper('.asset__doll-slider', {
+gsap.defaults({ overwrite: true });
+
+let ri = 0; // realindexを保持
+
+const thumb_progress = function(i) {
+  const this_slider_bar = $('.progress-bar').eq(i);
+  gsap.to(this_slider_bar, {
+    duration: 3,
+    width: "100%"
+  })
+}
+
+
+const thumbSwiper = new Swiper('.asset__thumb-slider', {
+  slidesPerView: 'auto',
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  autoplay: {
+    delay: 3000,
+  }
+});
+
+$(document).on('click', '.asset__thumb-slider__slide', function(e) {
+  if($(this).index() != ri) {
+    gsap.set('.progress-bar', {width:0});
+  }
+});
+
+new Swiper('.asset__doll-slider', {
   loop: true,
   effect: 'fade',
   fadeEffect: {
     crossFade: true,
   },
   thumbs: {
-    swiper: '.asset__thumb-slider',
+    swiper: thumbSwiper
   },
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
   },
-});
-
-const thumbSwiper = new Swiper('.asset__thumb-slider', {
-  slidesPerView: 'auto',
-  freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  on: {
+  on : {
     init: function() {
-      var progressBars = document.querySelectorAll('.progress-bar');
-      var slides = this.slides;
-
-      for (var i = 0; i < slides.length; i++) {
-        var slide = slides[i];
-        var progressBar = progressBars[i];
-        var progress = (i + 1) / slides.length * 100; // プログレスバーの進捗を計算
-
-        progressBar.style.width = progress + '%'; // プログレスバーの幅を設定
-      }
+      thumb_progress(0);
+      console.log(ri);
+    },
+    beforeLoopFix: function() {
+      gsap.set('.progress-bar', {width:0});
+    },
+    slideChangeTransitionEnd: function(e) {
+      ri = e.realIndex;
+      thumb_progress(e.realIndex);
     }
   }
 });
+

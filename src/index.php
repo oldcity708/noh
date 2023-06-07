@@ -163,9 +163,17 @@ include $path.'/libs/meta.php';
       <div class="inner">
         <div class="asset__doll-slider swiper">
           <div class="swiper-wrapper">    
-            <div class="asset__doll-slider__slide swiper-slide"><img src="./images/top/asset_doll.png" alt=""></div>
-            <div class="asset__doll-slider__slide swiper-slide"><img src="./images/top/asset_doll.png" alt=""></div>
-            <div class="asset__doll-slider__slide swiper-slide"><img src="./images/top/asset_doll.png" alt=""></div>
+            <div class="asset__doll-slider__slide swiper-slide">
+              <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="https://community-lens.storage.googleapis.com/preview-media/final/e9f8ccc3-9bff-4952-b7f3-86afcfc0c139.mp4" type="video/mp4"></video>
+            </div>
+            <div class="asset__doll-slider__slide swiper-slide">
+              <video muted autoplay playsinline loop preload="metadata" class="content-media-video">
+                <source src="https://community-lens.storage.googleapis.com/preview-media/final/bc0b59cb-0296-419a-acb7-7c8ec89aac0e.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="asset__doll-slider__slide swiper-slide">
+              <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
+            </div>
           </div>
         </div>
         <div class="left">
@@ -184,7 +192,6 @@ include $path.'/libs/meta.php';
             <div class="swiper-wrapper">
               <div class="asset__thumb-slider__slide swiper-slide">
                 <img src="./images/top/asset_img_01.jpg" alt="">
-                <span class="progress-bar"></span>
               </div>
               <div class="asset__thumb-slider__slide swiper-slide">
                 <img src="./images/top/asset_img_01.jpg" alt="">

@@ -4,14 +4,14 @@
   background: url(../images/top/mv.png)center center/cover no-repeat;
   &__text {
     position: absolute;
-    top: 50%;
+    width: calcvw(782);
+    // top: 50%;
+    top: 23.07692308%;
     left: 50%;
-    transform: translate(-50%,-50%);
-
+    transform: translate(-50%,0%);
     img {
       width: calcvw(782);
       height: auto;
-      
     }
   }
 }

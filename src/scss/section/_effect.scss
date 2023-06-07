@@ -19,6 +19,16 @@
     display: flex;
     justify-content: space-between;
 
+    &__wrap {
+      overflow: hidden;
+      border-radius: 24px;
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      right: -4px;
+      bottom: -4px;
+    }
+
     li {
       position: relative;
       width: 27.7778%;
@@ -42,8 +52,8 @@
         border-color: transparent;
         background: inherit;
         background-clip: border-box;
-        -webkit-filter: blur(2px);
-        filter: blur(2px);
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
         content: '';
         -webkit-clip-path: inset(0);
         clip-path: inset(0 round 24px);
@@ -52,6 +62,27 @@
 
       .img {
         display: none;
+      }
+
+      .movie {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: calc(100% - 8px);
+        width: 100%;
+        max-width: calc(100% - 8px);
+        border-radius: 20px;
+        overflow: hidden;
+        video {
+          position: absolute;
+          display: block;
+          height: 100%;
+          width: auto;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+        }
       }
 
       .grap {
@@ -67,32 +98,18 @@
         position: absolute;
         left: 0;
         bottom: 0;
-
-        .square {
-          // width: 88px;
-          // height: 88px;
-          // position: absolute;
-          // border-radius: 0 0 0 24px;
-          // overflow:hidden;
-          // left: -4px;
-          // bottom: -4px;
-          // backdrop-filter: blur(10px);
-          // -webkit-backdrop-filter: blur(10px);
-        }
-
-        .triangle {
+        &:before {
+          content: "";
+          width: 176px;
+          height: 176px;
+          display: block;
+          background: rgba(252, 250, 242, 0.3);
           position: absolute;
-          left: -4px;
-          bottom: -4px;
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 0 88px 88px 0;
-          border-radius: 0 0 0 24px;
-          border-color: transparent transparent rgba(252, 250, 242, 0.3) transparent;
-          background: transparent;
-          // filter: blur(4px);
-          // clip-path: inset(0 round 24px);
+          left: -105px;
+          bottom: -105px;
+          transform: rotate(45deg);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
         }
 
         &__logo {

@@ -82,14 +82,14 @@
         white-space: nowrap;
         display: flex;
         align-items: center;
-        animation-name: scrollEn;
+        animation-name: scrollEn2;
         animation-fill-mode: backwards;
         animation-duration: 80s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
 
         &.row02 {
-          animation-name: scrollEn2;
+          animation-name: scrollEn;
 
           .img {
             width: 535px;

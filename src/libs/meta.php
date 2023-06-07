@@ -65,6 +65,12 @@
 <link rel="stylesheet" href="https://use.typekit.net/tps8mky.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">
 
+
+<!-- Swiper
+======================================================================-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/thumbs.min.css">
+
 <!-- CSS
 ======================================================================-->
 <link href="<?php echo APP_URL; ?>css/style.css" rel="stylesheet">

@@ -26,7 +26,19 @@ include $path.'/libs/meta.php';
 
   <div class="movie">
     <div class="inner">
-      <div class="movie__movie"></div>
+      <div class="movie__movie">
+        <video autoplay="" muted="muted" playsinline="playsinline" loop="loop">
+          <source src="https://livestreaming.ricoh/videos/movie02.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="movie__modal">
+      <div class="movie__modal__youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3VAhPvzs8BY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+      </div>
+      <button class="close">
+        <img src="./images/common/btn_close.png" alt="">
+      </button>    
     </div>
   </div>
 
@@ -149,7 +161,13 @@ include $path.'/libs/meta.php';
     </div>
     <div class="cont">
       <div class="inner">
-        <div class="doll"><img src="./images/top/asset_doll.png" alt=""></div>
+        <div class="asset__doll-slider swiper">
+          <div class="swiper-wrapper">    
+            <div class="asset__doll-slider__slide swiper-slide"><img src="./images/top/asset_doll.png" alt=""></div>
+            <div class="asset__doll-slider__slide swiper-slide"><img src="./images/top/asset_doll.png" alt=""></div>
+            <div class="asset__doll-slider__slide swiper-slide"><img src="./images/top/asset_doll.png" alt=""></div>
+          </div>
+        </div>
         <div class="left">
           <span class="c-sub-ttl">( XRT TECHNOLOGY - PHYGITAL ASSET )</span>
           <div class="c-text-shuffle" id="shuffle02">
@@ -162,10 +180,24 @@ include $path.'/libs/meta.php';
         </div>
         <div class="right">
           <p class="c-text01">アセットの所有を証明し、利用権を与える。リアルワールド用のTシャツの発行とデジタルワールドでのTシャツの着用（開発中）が可能。</p>
-          <div class="thumb-asset">
-            <div class="thumb"><img src="./images/top/asset_img_01.jpg" alt=""></div>
-            <div class="thumb"><img src="./images/top/asset_img_01.jpg" alt=""></div>
-            <div class="thumb"><img src="./images/top/asset_img_01.jpg" alt=""></div>
+          <div class="asset__thumb-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="asset__thumb-slider__slide swiper-slide">
+                <img src="./images/top/asset_img_01.jpg" alt="">
+                <span class="progress-bar"></span>
+              </div>
+              <div class="asset__thumb-slider__slide swiper-slide">
+                <img src="./images/top/asset_img_01.jpg" alt="">
+                <span class="progress-bar"></span>
+              </div>
+              <div class="asset__thumb-slider__slide swiper-slide">
+                <img src="./images/top/asset_img_01.jpg" alt="">
+                <span class="progress-bar"></span>
+              </div>
+            </div>
+          </div>
+          <div class="bar">
+            <span></span>
           </div>
         </div>
       </div>
@@ -263,31 +295,40 @@ include $path.'/libs/meta.php';
       </div>
       <ul class="effect__list">
         <li>
-          <div class="img"><img src="./images/top/effect_img_01.png" alt=""></div>
-            <div class="grap"><img src="./images/common/grap_ryujin.svg" alt=""></div>
+          <div class="effect__list__wrap">
+            <div class="movie">
+              <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
+            </div>
             <div class="xrt">
               <span class="xrt__logo"><img src="./images/common/logo_xrt_02.svg" alt=""></span>
-            <div class="square">
-              <div class="triangle"></div>
             </div>
           </div>
+          <div class="grap"><img src="./images/common/grap_ryujin.svg" alt=""></div>
           <span class="name">( NOH - RYUJIN )</span>
         </li>
         <li>
-          <div class="img"><img src="./images/top/effect_img_02.png" alt=""></div>
-          <div class="grap"><img src="./images/common/grap_onichan.svg" alt=""></div>
-          <div class="xrt">
-            <span class="xrt__logo"><img src="./images/common/logo_xrt_02.svg" alt=""></span>
+          <div class="effect__list__wrap">
+            <div class="movie">
+              <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
+            </div>
+            <div class="xrt">
+              <span class="xrt__logo"><img src="./images/common/logo_xrt_02.svg" alt=""></span>
+            </div>
           </div>
+          <div class="grap"><img src="./images/common/grap_onichan.svg" alt=""></div>
           <span class="name">( NOH - ONI-CHAN )</span>
         </li>
         <li>
-        <div class="img"><img src="./images/top/effect_img_03.png" alt=""></div>
-        <div class="grap"><img src="./images/common/grap_kocho.svg" alt=""></div>
-        <div class="xrt">
-          <span class="xrt__logo"><img src="./images/common/logo_xrt_02.svg" alt=""></span>
-        </div>
-        <span class="name">( NOH - KOCHO )</span>
+          <div class="effect__list__wrap">
+            <div class="movie">
+              <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
+            </div>
+            <div class="xrt">
+              <span class="xrt__logo"><img src="./images/common/logo_xrt_02.svg" alt=""></span>
+            </div>
+          </div>
+          <div class="grap"><img src="./images/common/grap_kocho.svg" alt=""></div>
+          <span class="name">( NOH - KOCHO )</span>
         </li>
       </ul>
       <span class="message">A world where a healthy and prosperous life can be built through good connections.</span>

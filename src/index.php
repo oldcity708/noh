@@ -88,6 +88,7 @@ include $path.'/libs/meta.php';
             <a href="">
               <div class="img">
                 <div class="thumb"><img src="./images/top/fashion_img_01.png" alt=""></div>
+                <video loop="" class="video" preload="none" data-v-c0b4d82e=""><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4" data-v-c0b4d82e=""></video>
                 <div class="tag">
                   <div class="tag-list">
                     <span>NFC TAG</span>

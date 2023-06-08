@@ -18,8 +18,12 @@ include $path.'/libs/meta.php';
 
 
   <div class="mv">
-    <div class="mv__text">
-      <img src="./images/top/mv_catch.svg" alt="">   
+    <div class="inner">
+      <div class="mv__text">
+        <img src="./images/top/mv_catch.svg" alt="">   
+      </div>
+      <span class="mv__scroll">SCROLL</span>
+      <span class="mv__left">（能）</span>
     </div>
   </div>
 
@@ -85,79 +89,85 @@ include $path.'/libs/meta.php';
           <h2><img src="./images/common/fashion_ttl.svg" alt="Phygital Fashion NOH by XRT"></h2>
           <p class="c-text01">フィジタルとは、Physical（フィジカル）とDigital（デジタル）をかけ合わせた造語で、リアル世界とデジタル世界を融合させることであり、物理的な要素とデジタル要素を兼ね備えた体験をユーザーに提供します。</p>
         </div>
-        <ul class="fashion__list">
-          <li>
-            <a href="">
-              <div class="image-wrap">
-                <div class="image">
-                  <div class="thumb"><img src="./images/top/alien.png" alt=""></div>
-                  <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
-                  <div class="tag">
-                    <div class="tag-list">
-                      <span>NFC TAG</span>
-                      <span>XR</span>
+        <div class="fashion__list-wrap">
+          <ul class="fashion__list">
+            <li>
+              <a href="">
+                <div class="image-wrap">
+                  <div class="image">
+                    <div class="thumb"><img src="./images/top/alien.png" alt=""></div>
+                    <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
+                    <div class="tag">
+                      <div class="tag-list">
+                        <span>NFC TAG</span>
+                        <span>XR</span>
+                      </div>
+                      <div class="tag-list">
+                        <span>現実</span>
+                      </div>
                     </div>
-                    <div class="tag-list">
-                      <span>現実</span>
+                    <div class="bottom">
+                      <span>PHYSICAL ASSET</span>
                     </div>
-                  </div>
-                  <div class="bottom">
-                    <span>PHYSICAL ASSET</span>
                   </div>
                 </div>
-              </div>
-              <div class="text">
-                <p>服のNFCタグを読み込むことでXRライセンスとの紐付けが可能。また、胸のARマーカーを読み込むことでTシャツがXR表現で拡張される。</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div class="image-wrap">
-                <div class="image">
-                  <div class="thumb"><img src="./images/top/fashion_img_02.png" alt=""></div>
-                  <div class="tag">
-                    <div class="tag-list">
-                      <span>NFC</span>
+                <div class="text">
+                  <p>服のNFCタグを読み込むことでXRライセンスとの紐付けが可能。また、胸のARマーカーを読み込むことでTシャツがXR表現で拡張される。</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="image-wrap">
+                  <div class="image">
+                    <div class="thumb"><img src="./images/top/alien.png" alt=""></div>
+                    <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
+                    <!-- <div class="thumb"><img src="./images/top/fashion_img_02.png" alt=""></div> -->
+                    <div class="tag">
+                      <div class="tag-list">
+                        <span>NFC</span>
+                      </div>
+                      <div class="tag-list">
+                        <span>所有証明&キー</span>
+                      </div>
                     </div>
-                    <div class="tag-list">
-                      <span>所有証明&キー</span>
+                    <div class="bottom">
+                      <span>PHYSICAL ASSET</span>
                     </div>
-                  </div>
-                  <div class="bottom">
-                    <span>PHYSICAL ASSET</span>
                   </div>
                 </div>
-              </div>
-              <div class="text">
-                <p>リアルでの所有と紐付け所有証明と各種権利へのアクセスキーとなり、リアル世界とデジタル世界を繋ぐアイテムとなる。</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div class="image-wrap">
-                <div class="image">
-                  <div class="thumb"><img src="./images/top/fashion_img_03.png" alt=""></div>
-                  <div class="tag">
-                    <div class="tag-list">
-                      <span>METAVERSE</span>
-                    </div>
-                    <div class="tag-list">
-                      <span>デジタルワールド</span>
-                    </div>
-                  </div>
-                  <div class="bottom">
-                    <span>DIGITAL ASSET</span>
-                  </div>  
+                <div class="text">
+                  <p>リアルでの所有と紐付け所有証明と各種権利へのアクセスキーとなり、リアル世界とデジタル世界を繋ぐアイテムとなる。</p>
                 </div>
-              </div>
-              <div class="text">
-                <p>ライセンスの所有者のみがアクセスできる分散型データベースにアクセスが可能。メタバースでTシャツの着用が可能（開発中）に。</p>
-              </div>
-            </a>
-          </li>
-        </ul>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="image-wrap">
+                  <div class="image">
+                    <div class="thumb"><img src="./images/top/alien.png" alt=""></div>
+                    <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
+                    <!-- <div class="thumb"><img src="./images/top/fashion_img_03.png" alt=""></div> -->
+                    <div class="tag">
+                      <div class="tag-list">
+                        <span>METAVERSE</span>
+                      </div>
+                      <div class="tag-list">
+                        <span>デジタルワールド</span>
+                      </div>
+                    </div>
+                    <div class="bottom">
+                      <span>DIGITAL ASSET</span>
+                    </div>  
+                  </div>
+                </div>
+                <div class="text">
+                  <p>ライセンスの所有者のみがアクセスできる分散型データベースにアクセスが可能。メタバースでTシャツの着用が可能（開発中）に。</p>
+                </div>
+              </a>
+            </li>
+          </ul>  
+        </div>
       </div>
     </div>
   </section>
@@ -173,15 +183,16 @@ include $path.'/libs/meta.php';
         <div class="asset__doll-slider swiper">
           <div class="swiper-wrapper">    
             <div class="asset__doll-slider__slide swiper-slide">
-              <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="https://community-lens.storage.googleapis.com/preview-media/final/e9f8ccc3-9bff-4952-b7f3-86afcfc0c139.mp4" type="video/mp4"></video>
+              <img src="./images/top/asset_doll.png" alt="">
+              <!-- <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="https://community-lens.storage.googleapis.com/preview-media/final/e9f8ccc3-9bff-4952-b7f3-86afcfc0c139.mp4" type="video/mp4"></video> -->
             </div>
             <div class="asset__doll-slider__slide swiper-slide">
-              <video muted autoplay playsinline loop preload="metadata" class="content-media-video">
-                <source src="https://community-lens.storage.googleapis.com/preview-media/final/bc0b59cb-0296-419a-acb7-7c8ec89aac0e.mp4" type="video/mp4">
-              </video>
+              <img src="./images/top/asset_doll.png" alt="">
+              <!-- <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="https://community-lens.storage.googleapis.com/preview-media/final/bc0b59cb-0296-419a-acb7-7c8ec89aac0e.mp4" type="video/mp4"></video> -->
             </div>
             <div class="asset__doll-slider__slide swiper-slide">
-              <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
+              <img src="./images/top/asset_doll.png" alt="">
+              <!-- <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video> -->
             </div>
           </div>
         </div>
@@ -307,44 +318,46 @@ include $path.'/libs/meta.php';
         </div>
         <p class="c-text01">オリジナルチップで起動したARフィルターで胸のARマーカーを読み込むことで、キャラクターから生まれたお面が具現化し、それぞれの特性にそったエフェクトを纏うことができる。</p>
       </div>
-      <ul class="effect__list">
-        <li>
-          <div class="effect__list__wrap">
-            <div class="movie">
-              <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
+      <div class="effect__list-wrap">
+        <ul class="effect__list">
+          <li>
+            <div class="effect__list__wrap">
+              <div class="movie">
+                <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
+              </div>
+              <div class="xrt">
+                <span class="xrt__logo"><img src="./images/common/logo_xrt_02.svg" alt=""></span>
+              </div>
             </div>
-            <div class="xrt">
-              <span class="xrt__logo"><img src="./images/common/logo_xrt_02.svg" alt=""></span>
+            <div class="grap"><img src="./images/common/grap_ryujin.svg" alt=""></div>
+            <span class="name">( NOH - RYUJIN )</span>
+          </li>
+          <li>
+            <div class="effect__list__wrap">
+              <div class="movie">
+                <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
+              </div>
+              <div class="xrt">
+                <span class="xrt__logo"><img src="./images/common/logo_xrt_02.svg" alt=""></span>
+              </div>
             </div>
-          </div>
-          <div class="grap"><img src="./images/common/grap_ryujin.svg" alt=""></div>
-          <span class="name">( NOH - RYUJIN )</span>
-        </li>
-        <li>
-          <div class="effect__list__wrap">
-            <div class="movie">
-              <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
+            <div class="grap grap02"><img src="./images/common/grap_onichan.svg" alt=""></div>
+            <span class="name">( NOH - ONI-CHAN )</span>
+          </li>
+          <li>
+            <div class="effect__list__wrap">
+              <div class="movie">
+                <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
+              </div>
+              <div class="xrt">
+                <span class="xrt__logo"><img src="./images/common/logo_xrt_02.svg" alt=""></span>
+              </div>
             </div>
-            <div class="xrt">
-              <span class="xrt__logo"><img src="./images/common/logo_xrt_02.svg" alt=""></span>
-            </div>
-          </div>
-          <div class="grap"><img src="./images/common/grap_onichan.svg" alt=""></div>
-          <span class="name">( NOH - ONI-CHAN )</span>
-        </li>
-        <li>
-          <div class="effect__list__wrap">
-            <div class="movie">
-              <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
-            </div>
-            <div class="xrt">
-              <span class="xrt__logo"><img src="./images/common/logo_xrt_02.svg" alt=""></span>
-            </div>
-          </div>
-          <div class="grap"><img src="./images/common/grap_kocho.svg" alt=""></div>
-          <span class="name">( NOH - KOCHO )</span>
-        </li>
-      </ul>
+            <div class="grap grap03"><img src="./images/common/grap_kocho.svg" alt=""></div>
+            <span class="name">( NOH - KOCHO )</span>
+          </li>
+        </ul>
+      </div>
       <span class="message">A world where a healthy and prosperous life can be built through good connections.</span>
     </div>
   </section>
@@ -378,10 +391,17 @@ include $path.'/libs/meta.php';
   </section>
 
 
-  <section class="">
-  <div class="inner">
-
-  </div>
+  <section class="comingsoon">
+    <div class="inner">
+      <ul class="comingsoon__list">
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+      </ul>
+    </div>
   </section>
 
 

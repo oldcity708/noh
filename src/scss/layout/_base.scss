@@ -178,6 +178,9 @@ select::-ms-expand {
   max-width: 1160px;
   padding: 0 40px;
   margin: 0 auto;
+  @include SP {
+    padding: 0 16px;
+  }
 }
 
 [data-trigger] {
@@ -197,6 +200,12 @@ body {
   background: #000;
   color: #fff;
   &.fixed {
+    overflow: hidden;
+  }
+}
+
+main {
+  @include SP {
     overflow: hidden;
   }
 }

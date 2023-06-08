@@ -10,7 +10,7 @@ let ri = 0; // realindexを保持
 const thumb_progress = function(i) {
   const this_slider_bar = $('.progress-bar').eq(i);
   gsap.to(this_slider_bar, {
-    duration: 3,
+    duration: 3, //秒数
     width: "100%"
   })
 }

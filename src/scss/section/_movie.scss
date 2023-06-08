@@ -11,7 +11,9 @@
     overflow: hidden;
     cursor: none;
     border-radius: 24px;
-    // cursor: url(../images/common/btn_play.svg) 96 96, auto;
+    @include SP {
+      margin-top: -20px;
+    }
     &:after {
       content: ' ';
       display: block;
@@ -62,10 +64,22 @@
     &__youtube {
       width: calc(100% - 80px);
       max-width: 800px;
-      height: 450px;
+      // width: 100%;
+      padding-top: 35.2%;
+      position: relative;
+      @include SP {
+        width: calc(100% - 32px);
+        padding-top: 50%;
+      }
       iframe {
+        // min-width: 100%;
+        // min-height: 100%;
         width: 100%;
         height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
       }
     }
     .close {
@@ -73,6 +87,11 @@
       position: absolute;
       top: 26px;
       right: 26px;
+      @include SP {
+        width: 50px;
+        right: 16px;
+        top: 16px;
+      }
     }
   }
 }

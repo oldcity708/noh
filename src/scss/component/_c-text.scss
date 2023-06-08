@@ -3,20 +3,32 @@
     @include PC {
       height: 148px;
     }
+    @include SP {
+      height: 125px;
+    }
   }
   &#shuffle02 {
     @include PC {
       height: 148px;
+    }
+    @include SP {
+      height: 125px;
     }
   }
   &#shuffle03 {
     @include PC {
       height: 148px;
     }
+    @include SP {
+      height: 125px;
+    }
   }
   &#shuffle04 {
     @include PC {
       height: 148px;
+    }
+    @include SP {
+      height: 125px;
     }
   }
   &--element {
@@ -25,6 +37,9 @@
     letter-spacing: .02em;
     font-weight: 600;
     line-height: 1.3;
+    @include SP {
+      @include font-size(32);
+    }
   }
 }
 
@@ -39,5 +54,8 @@
 .c-text01 {
   @include font-size(14);
   line-height: 2;
-  letter-spacing: .05em; 
+  letter-spacing: .05em;
+  @include SP {
+    @include font-size(12);
+  }
 }

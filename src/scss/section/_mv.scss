@@ -2,6 +2,23 @@
   padding-top: 60.9375%;
   position: relative;
   background: url(../images/top/mv.png)center center/cover no-repeat;
+  @include SP {
+    padding-top: 100%;
+  }
+  .inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 134px;
+    max-width: 1280px;
+    @include SP {
+      padding-bottom: 40px;
+    }
+  }
   &__text {
     position: absolute;
     width: calcvw(782);
@@ -9,9 +26,45 @@
     top: 23.07692308%;
     left: 50%;
     transform: translate(-50%,0%);
+    @include SP {
+      top: 37%;
+      width: calcvw(900);
+    }
     img {
       width: calcvw(782);
       height: auto;
+      @include SP {
+        width: calcvw(900);
+      }
+    }
+  }
+  &__scroll {
+    @include font-size(12);
+    font-weight: 400;
+    letter-spacing: .05em;
+    font-family: $proxima;
+    color: #8E909A;
+    position: absolute;
+    bottom: 134px;
+    left: 50%;
+    transform: translate(-50%,0);
+    @include SP {
+      @include font-size(10);
+      bottom: 40px;
+    }
+  }
+  &__left {
+    @include font-size(12);
+    letter-spacing: .05em;
+    font-weight: 400;
+    color:#FCFAF2;
+    @include SP {
+      @include font-size(10);
     }
   }
 }
+
+
+
+
+

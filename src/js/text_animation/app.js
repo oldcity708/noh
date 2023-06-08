@@ -132,3 +132,25 @@ gsap.to("#shuffle04", {
     }
   },
 });
+
+
+
+gsap.utils.toArray(".c-text-shuffle").forEach(function(target) {
+  gsap.from(target, {
+    scrollTrigger: {
+      trigger: target,
+      // markers: true,
+      onEnter: function() {
+        let shuffle_targets = $(this).find('.c-text-shuffle--element');
+        console.log(shuffle_targets);
+        // let i=0;
+        // for (let index = 0; index < 3; index++) {
+        //   const element = shuffle_targets[i];
+        //   var _shuffle = new TextShuffle(element);
+        //   _shuffle.to(texts[index], 1.2);
+        //   i++;
+        // }
+      }
+    },
+  });
+});

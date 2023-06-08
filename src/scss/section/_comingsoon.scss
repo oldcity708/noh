@@ -1,0 +1,29 @@
+.comingsoon {
+  padding: 76px 0 60px;
+  @include SP {
+    padding: 38px 0 30px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    @include SP {
+      display: block;
+    }
+    li {
+      width: 47.2222%;
+      @include SP {
+        width: 100%;
+      }
+      &:first-of-type {
+        @include SP {
+          margin-bottom: 16px;
+        }
+      }
+      div {
+        padding-top: 66.66666667%;
+        border-radius: 24px;
+        border: 1px solid #4D4F5A;
+      }
+    }
+  }
+}

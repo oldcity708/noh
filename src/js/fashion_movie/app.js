@@ -1,6 +1,4 @@
 $(function(){
-  // $(".fashion__list li .video")[0].pause();
-
   $(".fashion__list li").on("mouseenter", function() {
     var videoElement = $(this).find("video")[0];
     if (videoElement) {

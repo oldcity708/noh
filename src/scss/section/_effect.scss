@@ -1,9 +1,15 @@
 .effect {
   padding: 80px 0 76px;
+  @include SP {
+    padding: 40px 0 38px;
+  }
 
   &__text {
     max-width: 420px;
     margin-bottom: 120px;
+    @include SP {
+      margin-bottom: 60px;
+    }
 
     .c-sub-ttl {
       display: block;
@@ -15,9 +21,29 @@
     }
   }
 
+  &__list-wrap {
+    @include SP {
+      overflow-x: scroll;
+      padding-bottom: 25px;
+      &::-webkit-scrollbar {
+        height: 3px;
+        width: 3px;
+        display: block;
+        // background-color: #fff;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 0;
+      }
+    }
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;
+    @include SP {
+      width: 800px;
+    }
 
     &__wrap {
       overflow: hidden;
@@ -27,6 +53,7 @@
       left: -4px;
       right: -4px;
       bottom: -4px;
+      z-index: 1;
     }
 
     li {
@@ -88,8 +115,16 @@
       .grap {
         position: absolute;
         right: 0;
-        bottom: -20px;
+        bottom: -25px;
         z-index: +1;
+        &.grap02 {
+          right: -5px;
+          bottom: -6px;
+        }
+        &.grap03 {
+          right: -4px;
+          bottom: -16px;
+        }
       }
 
       .xrt {
@@ -98,6 +133,8 @@
         position: absolute;
         left: 0;
         bottom: 0;
+        border-radius: 0 0 0 24px;
+        overflow: hidden;
         &:before {
           content: "";
           width: 176px;
@@ -146,5 +183,9 @@
     font-weight: 600;
     display: block;
     text-align: center;
+    @include SP {
+      margin-top: 76px;
+      @include font-size(30);
+    }
   }
 }

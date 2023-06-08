@@ -15,14 +15,14 @@
                     <small class="sub-ttl">Follow US</small>
                     <ul class="link-list">
                         <li>
-                            <a href="">Twitter</a>
+                            <a href="https://twitter.com/HKSK_studios" target="_blank">Twitter</a>
                         </li>
                         <li>
-                            <a href="">Instagram</a>
+                            <a href="https://www.instagram.com/hksk_studios/" target="_blank">Instagram</a>
                         </li>
-                        <li>
-                            <a href="">Discord</a>
-                        </li>
+                        <!-- <li>
+                            <a href="" target="_blank">Discord</a>
+                        </li> -->
                     </ul> 
                 </div>
                 <div class="box">

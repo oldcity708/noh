@@ -1,8 +1,11 @@
 .look {
   padding: 76px 0;
+  @include SP {
+    padding: 38px 0;
+  }
 
   &__scroll {
-    padding: 16px 0;
+    // padding: 16px 0;
     white-space: nowrap;
     overflow: hidden;
     position: relative;
@@ -14,7 +17,8 @@
       align-items: center;
       white-space: nowrap;
       animation-name: scrollEn2;
-      animation-fill-mode: backwards;
+      // animation-fill-mode: backwards;
+      animation-fill-mode: both;
       animation-duration: 60s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
@@ -23,9 +27,15 @@
     .img {
       width: 360px;
       margin: 0 30px;
+      @include SP {
+        width: 180px;
+      }
 
       &:nth-of-type(2n) {
         width: 420px;
+        @include SP {
+          width: 210px;
+        }
       }
     }
   }

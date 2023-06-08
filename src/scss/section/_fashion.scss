@@ -1,12 +1,16 @@
 .fashion {
   padding: 76px 0 32px;
-
+  @include SP {
+    padding: 38px 0 16px;
+  }
   .cont {
     border-radius: 24px;
     background: #1C1C1E;
     padding: 88px 30px 80px;
     position: relative;
-
+    @include SP {
+      padding: 44px 16px 30px;
+    }
     &:before {
       content: "";
       width: 100%;
@@ -24,19 +28,52 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 72px;
+    @include SP {
+      padding: 0;
+      display: block;
+      margin-bottom: 36px;
+    }
 
     h2 {
       width: 49.4845%;
+      @include SP {
+        // width: 100%;
+        width: 80%;
+        margin-bottom: 16px;
+      }
     }
 
     .c-text01 {
       width: 43.299%;
+      @include SP {
+        width: 100%;
+      }
+    }
+  }
+
+  &__list-wrap {
+    @include SP {
+      overflow-x: scroll;
+      padding-bottom: 10px;
+      &::-webkit-scrollbar {
+        height: 3px;
+        width: 3px;
+        display: block;
+        // background-color: #fff;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 0;
+      }
     }
   }
 
   &__list {
     display: flex;
     justify-content: space-between;
+    @include SP {
+      width: 760px;
+    }
 
     li {
       width: calc((100% - 120px) / 3);
@@ -72,6 +109,7 @@
       position: relative;
       overflow: hidden;
       padding-top: 178%;
+      z-index: 1;
       
       .thumb {
         position: absolute;
@@ -114,6 +152,9 @@
         left: 0;
         bottom: 73px;
         padding: 0 8px;
+        @include SP {
+          bottom: 60px
+        }
 
         .tag-list {
           display: flex;
@@ -136,6 +177,9 @@
             margin-bottom: 6px;
             color: #1C1C1E;
             white-space: nowrap;
+            @include SP {
+              @include font-size(12);
+            }
           }
         }
       }
@@ -160,6 +204,9 @@
           line-height: 1.3;
           font-family: $proxima;
           font-weight: 600;
+          @include SP {
+            @include font-size(18);
+          }
         }
       }
     }

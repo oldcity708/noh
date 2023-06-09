@@ -1,7 +1,27 @@
 <?php 
-    // $path_arr = explode('/', $SERVER['REQUEST_URI'];
-    // $path_arr = array_reverse($path_arr);
-    // $second_dir = $path_arr[1];
+    $url = $_SERVER['REQUEST_URI'];
+    if (strpos($url, 'en') !== false) {
+        $lang = 'EN';
+    } else {
+        $lang = 'JP';
+    };
+
+    $url = parse_url($url);
+    $url_section = explode('/', $url['path']);
+    $count = count($url_section) - 2;
+    $last = $url_section[$count];
+    // echo $last;
+    // print_r($url_section);
+    // $last = end($url['sections']);
+    // echo $last;
+
+    // $lastSlashPosition = strrpos($url, '/');
+    // $secondLastSlashPosition = strrpos($url, '/', $lastSlashPosition - strlen($url) - 1);
+    // $desiredString = '';
+    // if ($lastSlashPosition !== false && $secondLastSlashPosition !== false && $secondLastSlashPosition < $lastSlashPosition) {
+    //     $desiredString = substr($url, $secondLastSlashPosition + 1, $lastSlashPosition - $secondLastSlashPosition - 1);
+    // }
+    // echo $desiredString;
 ?>
 
 <header class="header">
@@ -28,12 +48,12 @@
                 </li> -->
             </ul>
             <div class="lang">
-                <span>JP</span>
+                <span><?php echo $lang; ?></span>
                 <ul class="lang__list">
-                    <li class="disable">
+                    <li class="<?php if($lang == 'JP'){echo 'disable';}?>">
                         <a href="<?php echo APP_URL; ?>">JP</a>
                     </li>
-                    <li>
+                    <li class="<?php if($lang == 'EN'){echo 'disable';}?>">
                         <a href="<?php echo APP_URL; ?>en/">EN</a>
                     </li>
                 </ul>

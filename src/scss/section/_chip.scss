@@ -56,14 +56,14 @@
         display: block;
         margin-bottom: 32px;
         @include SP {
-          // margin-bottom: 16px;
+          margin-bottom: 24px;
         }
       }
 
       .c-text-shuffle {
         margin-bottom: 40px;
         @include SP {
-          // margin-bottom: 20px;
+          margin-bottom: 32px;
         }
       }
     }
@@ -118,18 +118,33 @@
 
           .img {
             width: 535px;
+            margin-left: -10px;
+            @include SP {
+              width: 267.5px;
+              margin-left: -5px;
+            }
           }
         }
 
         &.row03 {
           .img {
             width: 639px;
+            margin-left: -10px;
+            @include SP {
+              width: 319.5px;
+              margin-left: -5px;
+            }
           }
         }
 
         .img {
           width: 652px;
           margin-right: 0;
+          margin-left: -10px;
+          @include SP {
+            width: 326px;
+            margin-left: -5px;
+          }
         }
       }
 

@@ -122,7 +122,7 @@ gulp.task('watch', () => {
 	console.log("start watch!");
 	gulp.watch(srcDir + 'scss/**/*', gulp.task('runCompileScss'));
 	gulp.watch(srcDir + '**/*.php', gulp.task('runCompilePhp'));
-	gulp.watch(srcDir + 'js/**/*', gulp.task('runCompileJs'));
+	// gulp.watch(srcDir + 'js/**/*', gulp.task('runCompileJs'));
 	gulp.watch(srcDir + 'js/**/*', gulp.task('webpack'));
 	gulp.watch(srcDir + 'images/**/*', gulp.task('imageCompress'));
 });

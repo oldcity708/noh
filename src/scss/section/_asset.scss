@@ -8,8 +8,8 @@
     width: 98px;
     margin: 0 auto 64px;
     @include SP {
-      width: 49px;
-      margin-bottom: 48px;
+      width: 56px;
+      margin-bottom: 52px;
     }
   }
 
@@ -47,8 +47,9 @@
     transform: translate(-50%,-50%);
     @include SP {
       z-index: +1;
-      transform: translate(-50%, 0);
-      top: 200px;
+      transform: translate(0%, 0);
+      position: static;
+      order: 2;
     }
     video {
       width: 100%;
@@ -112,7 +113,7 @@
       justify-content: space-between;
       position: relative;
       @include SP {
-        display: block;
+        flex-direction: column;
       }
 
       // .doll {
@@ -129,13 +130,15 @@
         @include SP {
           width: 100%;
           text-align: left;
+          order: 1;
+          margin-bottom: 48px;
         }
 
         .c-sub-ttl {
           margin-bottom: 32px;
           display: block;
           @include SP {
-            // margin-bottom: 16px;
+            margin-bottom: 24px;
           }
         }
       }
@@ -145,9 +148,9 @@
         padding-top: 48px;
         @include SP {
           width: 100%;
-          padding-top: 117vw;
           display: flex;
           flex-direction: column;
+          order: 3;
         }
         .c-text01 {
           @include SP {

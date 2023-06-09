@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+// ランダムテキスト生成
 function TextShuffle(_txt) {
   var _this = this;
   _this._index = 0;
@@ -38,118 +40,35 @@ function TextShuffle(_txt) {
   }
 }
 
-var texts = [],
-    shuffle01_flag = false,
-    shuffle02_flag = false,
-    shuffle03_flag = false,
-    shuffle04_flag = false;
 
-$('.c-text-shuffle--element').each(function(e) {
-  texts.push($(this).text());
-});
 
-gsap.to("#shuffle01", {
-  scrollTrigger: {
-    trigger: '#shuffle01',
-    start: 'top bottom',
-    invalidateOnRefresh: true,
-    onEnter: function() {
-      if(!shuffle01_flag) {
-        shuffle01_flag = true;
-        const shuffle_targets = $('#shuffle01').find('.c-text-shuffle--element');
-        let i=0;
-        for (let index = 0; index < 3; index++) {
-          const element = shuffle_targets[i];
-          var _shuffle = new TextShuffle(element);
-          _shuffle.to(texts[index], 1.2);
-          i++;
-        }
-      }
-    }
-  },
+// ランダムテキストごとに配列を作る
+const arrays = [];
+$('.c-text-shuffle').each(function(index){
+  const array = [];
+  $(this).find('.c-text-shuffle--element').each(function() {
+    array.push($(this).text());
+  });
+  arrays[index] = array;
 });
 
 
-gsap.to("#shuffle02", {
-  scrollTrigger: {
-    trigger: '#shuffle02',
-    start: 'top bottom',
-    invalidateOnRefresh: true,
-    onEnter: function() {
-      if(!shuffle02_flag) {
-        shuffle02_flag = true;
-        const shuffle_targets = $('#shuffle02').find('.c-text-shuffle--element');
-        let i=0;
-        for (let index = 3; index < 6; index++) {
-          const element = shuffle_targets[i];
-          var _shuffle = new TextShuffle(element);
-          _shuffle.to(texts[index], 1.2);
-          i++;
-        }
-      }
-    }
-  },
-});
-
-gsap.to("#shuffle03", {
-  scrollTrigger: {
-    trigger: '#shuffle03',
-    start: 'top bottom',
-    invalidateOnRefresh: true,
-    onEnter: function() {
-      if(!shuffle03_flag) {
-        shuffle03_flag = true;
-        const shuffle_targets = $('#shuffle03').find('.c-text-shuffle--element');
-        let i=0;
-        for (let index = 6; index < 9; index++) {
-          const element = shuffle_targets[i];
-          var _shuffle = new TextShuffle(element);
-          _shuffle.to(texts[index], 1.2);
-          i++;
-        }
-      }
-    }
-  },
-});
-
-gsap.to("#shuffle04", {
-  scrollTrigger: {
-    trigger: '#shuffle04',
-    start: 'top bottom',
-    invalidateOnRefresh: true,
-    onEnter: function() {
-      if(!shuffle04_flag) {
-        shuffle04_flag = true;
-        const shuffle_targets = $('#shuffle04').find('.c-text-shuffle--element');
-        let i=0;
-        for (let index = 9; index < 12; index++) {
-          const element = shuffle_targets[i];
-          var _shuffle = new TextShuffle(element);
-          _shuffle.to(texts[index], 1.2);
-          i++;
-        }
-      }
-    }
-  },
-});
-
-
-
-gsap.utils.toArray(".c-text-shuffle").forEach(function(target) {
+// ランダムテキストごとにスクロールしたらランダムテキスト関数を発火
+gsap.utils.toArray(".c-text-shuffle").forEach(function(target, index) {
   gsap.from(target, {
     scrollTrigger: {
       trigger: target,
-      // markers: true,
+      markers: true,
       onEnter: function() {
-        let shuffle_targets = $(this).find('.c-text-shuffle--element');
-        console.log(shuffle_targets);
-        // let i=0;
-        // for (let index = 0; index < 3; index++) {
-        //   const element = shuffle_targets[i];
-        //   var _shuffle = new TextShuffle(element);
-        //   _shuffle.to(texts[index], 1.2);
-        //   i++;
-        // }
+        const shuffle_targets = target.querySelectorAll('.c-text-shuffle--element');
+        const this_array = arrays[index];
+        const this_array_length = this_array.length;
+        for (let i = 0; i < this_array_length; i++) {
+          let element = shuffle_targets[i];
+          let element_text = shuffle_targets[i].innerText;
+          var _shuffle = new TextShuffle(element);
+          _shuffle.to(element_text, 1.2);
+        }
       }
     },
   });

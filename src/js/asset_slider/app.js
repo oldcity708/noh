@@ -47,7 +47,7 @@ new Swiper('.asset__doll-slider', {
   on : {
     init: function() {
       thumb_progress(0);
-      console.log(ri);
+      // console.log(ri);
     },
     beforeLoopFix: function() {
       gsap.set('.progress-bar', {width:0});

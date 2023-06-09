@@ -14,10 +14,16 @@
     .c-sub-ttl {
       display: block;
       margin-bottom: 32px;
+      @include SP {
+        margin-bottom: 24px;
+      }
     }
 
     .c-text-shuffle {
       margin-bottom: 40px;
+      @include SP {
+        margin-bottom: 32px;
+      }
     }
   }
 

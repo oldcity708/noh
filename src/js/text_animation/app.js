@@ -58,7 +58,7 @@ gsap.utils.toArray(".c-text-shuffle").forEach(function(target, index) {
   gsap.from(target, {
     scrollTrigger: {
       trigger: target,
-      markers: true,
+      // markers: true,
       onEnter: function() {
         const shuffle_targets = target.querySelectorAll('.c-text-shuffle--element');
         const this_array = arrays[index];

@@ -305,6 +305,54 @@ include $path.'/libs/meta.php';
   </section>
 
 
+  <section class="product">
+    <div class="inner">
+      <div class="product__ttl">
+        <span class="c-sub-ttl">( XRT TECHNOLOGY - AR EFFECT )</span>
+        <div class="c-text-shuffle">
+          <h2>
+            <span class="c-text-shuffle--element">The intersection of</span><br>
+            <span class="c-text-shuffle--element">Japanese culture</span><br>
+            <span class="c-text-shuffle--element">and technology</span>
+          </h2>
+        </div>
+      </div>
+      <div class="product__image">
+        <img src="./images/top/product_img_01.png" alt="">
+      </div>
+      <ul class="product__detail">
+        <li>
+          <div class="product__detail__image">
+            
+          </div>
+          <div class="product__detail__text">
+            <span class="item">ARマーカー</span>
+            <p class="text">服のNFCタグを読み込むことでXRライセンスとの紐付けが可能。また、胸のARマーカーを読み込むことでTシャツがXR表現で拡張される。</p>
+          </div>
+        </li>
+        <li>
+          <div class="product__detail__image">
+            
+          </div>
+          <div class="product__detail__text">
+            <span class="item">チップホルダー</span>
+            <p class="text">服のNFCタグを読み込むことでXRライセンスとの紐付けが可能。また、胸のARマーカーを読み込むことでTシャツがXR表現で拡張される。</p>
+          </div>
+        </li>
+        <li>
+          <div class="product__detail__image">
+            
+          </div>
+          <div class="product__detail__text">
+            <span class="item">アクティベーションタグ</span>
+            <p class="text">服のNFCタグを読み込むことでXRライセンスとの紐付けが可能。また、胸のARマーカーを読み込むことでTシャツがXR表現で拡張される。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
   <section class="effect">
     <div class="inner">
       <div class="effect__text">
@@ -369,23 +417,19 @@ include $path.'/libs/meta.php';
         <div class="img"><img src="./images/top/look_img_01.png" alt=""></div>
         <div class="img"><img src="./images/top/look_img_02.png" alt=""></div>
         <div class="img"><img src="./images/top/look_img_03.png" alt=""></div>
-        <div class="img"><img src="./images/top/look_img_04.png" alt=""></div> 
+        <div class="img"><img src="./images/top/look_img_04.png" alt=""></div>   
         <div class="img"><img src="./images/top/look_img_01.png" alt=""></div>
         <div class="img"><img src="./images/top/look_img_02.png" alt=""></div>
         <div class="img"><img src="./images/top/look_img_03.png" alt=""></div>
-        <div class="img"><img src="./images/top/look_img_04.png" alt=""></div> 
+        <div class="img"><img src="./images/top/look_img_04.png" alt=""></div>
         <div class="img"><img src="./images/top/look_img_01.png" alt=""></div>
         <div class="img"><img src="./images/top/look_img_02.png" alt=""></div>
         <div class="img"><img src="./images/top/look_img_03.png" alt=""></div>
-        <div class="img"><img src="./images/top/look_img_04.png" alt=""></div>        
+        <div class="img"><img src="./images/top/look_img_04.png" alt=""></div>
         <div class="img"><img src="./images/top/look_img_01.png" alt=""></div>
         <div class="img"><img src="./images/top/look_img_02.png" alt=""></div>
         <div class="img"><img src="./images/top/look_img_03.png" alt=""></div>
-        <div class="img"><img src="./images/top/look_img_04.png" alt=""></div>        
-        <div class="img"><img src="./images/top/look_img_01.png" alt=""></div>
-        <div class="img"><img src="./images/top/look_img_02.png" alt=""></div>
-        <div class="img"><img src="./images/top/look_img_03.png" alt=""></div>
-        <div class="img"><img src="./images/top/look_img_04.png" alt=""></div>        
+        <div class="img"><img src="./images/top/look_img_04.png" alt=""></div>    
       </div>
     </div>
   </section>

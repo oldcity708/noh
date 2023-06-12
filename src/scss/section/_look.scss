@@ -17,16 +17,18 @@
       align-items: center;
       white-space: nowrap;
       animation-name: scrollEn2;
-      // animation-fill-mode: backwards;
-      animation-fill-mode: both;
-      animation-duration: 60s;
+      animation-fill-mode: backwards;
+      // animation-fill-mode: both;
+      animation-duration: 30s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
+      animation-delay: -15s;
     }
 
     .img {
       width: 360px;
-      margin: 0 30px;
+      // margin: 0 30px;
+      margin-right: 60px;
       @include SP {
         width: 180px;
       }

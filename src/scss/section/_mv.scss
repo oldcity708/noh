@@ -3,7 +3,9 @@
   position: relative;
   background: url(../images/top/mv.png)center center/cover no-repeat;
   @include SP {
-    padding-top: 100%;
+    // padding-top: 100%;
+    padding-top: 120.53333333%;
+    background: url(../images/top/mv_sp.png)center center/cover no-repeat;
   }
   .inner {
     position: absolute;
@@ -13,8 +15,10 @@
     left: 0;
     display: flex;
     align-items: flex-end;
-    padding-bottom: 134px;
-    max-width: 1280px;
+    // padding-bottom: 134px;
+    padding-bottom: 10.46875vw;
+    // max-width: 1280px;
+    max-width: 100%;
     @include SP {
       padding-bottom: 40px;
     }
@@ -27,25 +31,29 @@
     left: 50%;
     transform: translate(-50%,0%);
     @include SP {
-      top: 37%;
-      width: calcvw(900);
+      top: 34%;
+      // width: calcvw(900);
+      width: 91.46666667vw;
     }
     img {
       width: calcvw(782);
       height: auto;
       @include SP {
-        width: calcvw(900);
+        // width: calcvw(900);
+        width: 91.46666667vw;
       }
     }
   }
   &__scroll {
-    @include font-size(12);
+    // @include font-size(12);
+    font-size: 0.9375vw;
     font-weight: 400;
     letter-spacing: .05em;
     font-family: $proxima;
     color: #8E909A;
     position: absolute;
-    bottom: 134px;
+    // bottom: 134px;
+    bottom: 10.46875vw;
     left: 50%;
     transform: translate(-50%,0);
     @include SP {
@@ -54,10 +62,16 @@
     }
   }
   &__left {
-    @include font-size(12);
+    // @include font-size(12);
+    font-size: 0.9375vw;
     letter-spacing: .05em;
     font-weight: 400;
     color:#FCFAF2;
+    @include PC {
+      position: absolute;
+      left: 40px;
+      bottom: 10.46875vw; 
+    }
     @include SP {
       @include font-size(10);
     }

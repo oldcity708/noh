@@ -69,6 +69,7 @@
     @include SP {
       margin-top: 0px;
       order: 1;
+      width: 79.30029155%;
     }
     .swiper-wrapper {
       
@@ -132,6 +133,7 @@
           text-align: left;
           order: 1;
           margin-bottom: 48px;
+          padding: 0 8px;
         }
 
         .c-sub-ttl {
@@ -155,7 +157,8 @@
         .c-text01 {
           @include SP {
             order: 2;
-            margin-top: 24px;
+            margin-top: 46px;
+            padding: 0 8px;
           }
         }
 

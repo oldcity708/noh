@@ -3,6 +3,10 @@
   @include SP {
     padding: 32px 0 56px;
   }
+  .inner {
+    // max-width: 1320px;
+    max-width: 1400px;
+  }
   &__read {
     position: relative;
     display: flex;
@@ -13,6 +17,8 @@
       display: block;
       padding-top: 42px;
       padding-bottom: 52px;
+      padding-left: 8px;
+      padding-right: 8px;
     }
 
     .draw-svgs {
@@ -30,18 +36,30 @@
       }
       svg {
         &:nth-of-type(1){
+          @include PC {
+            width: 26.66666667%;
+            height: auto;
+          }
           @include SP {
             width: 26.66666667%;
             width: 27%;
           }
         }
         &:nth-of-type(2){
+          @include PC {
+            width: 30.5556%;
+            height: auto;
+          }
           @include SP {
             width: 30.5556%;
             width: 31%;
           }
         }
         &:nth-of-type(3){
+          @include PC {
+            width: 25.64814815%;
+            height: auto;
+          }
           @include SP {
             width: 25.64814815%;
           }

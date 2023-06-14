@@ -5,6 +5,9 @@
   left: 0;
   width: 100%;
   z-index: +99;
+  @include SP {
+    padding: 28px 0;
+  }
   .inner {
     padding: 0 28px;
     display: flex;
@@ -12,14 +15,14 @@
     align-items: center;
     max-width: 100%;
     @include SP {
-      padding: 0 20px;
+      padding: 0 16px;
     }
   }
   &__logo {
     display: block;
     width: 68px;
     @include SP {
-      width: 50px;
+      width: 56px;
     }
   }
   &__right {
@@ -32,7 +35,7 @@
         width: 18px;
         margin-left: 28px;
         @include SP {
-          margin-left: 18px;
+          margin-left: 24px;
         }
         a {
           display: block;
@@ -51,7 +54,7 @@
       position: relative;
       cursor: pointer;
       @include SP {
-        margin-left: 18px;
+        margin-left: 24px;
       }
       &:hover {
         .lang__list {
@@ -103,6 +106,7 @@
             transition: .3s;
             &:hover {
               background: #95FE1A;
+              opacity: 1;
             }
           }
         }

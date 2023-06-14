@@ -20,7 +20,8 @@ function TextShuffle(_txt) {
     _finalString = _newStr;
     _finalLength = _finalString.length, _this._index = 0;
     gsap.killTweensOf(_this);
-    gsap.to(_this, { duration: _time || 2, _index: _finalLength * 2, ease: "power2.out", onUpdate: shuffle });
+    // gsap.to(_this, { duration: _time || 2, _index: _finalLength * 2, ease: "power2.out", onUpdate: shuffle });
+    gsap.to(_this, { duration: _time || 2, _index: _finalLength * 3, ease: "power2.out", onUpdate: shuffle });
   };
 
   function shuffle() {

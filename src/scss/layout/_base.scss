@@ -19,6 +19,7 @@ YuMincho,
 "ＭＳ Ｐ明朝",
 serif;
 
+$noto: 'Noto Sans JP', sans-serif;
 $yakuhan: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
 $proxima: "proxima-nova", sans-serif;
 
@@ -71,7 +72,7 @@ $proxima: "proxima-nova", sans-serif;
  */
 html {
   font-size: 62.5%;
-  font-family: $yakuhan;
+  font-family: $noto;
 
   // color: #292929;
   // font-feature-settings: "palt";
@@ -99,6 +100,10 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+  transition: opacity .3s ease;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 input,
@@ -185,8 +190,10 @@ select::-ms-expand {
 
 [data-trigger] {
   position: relative;
-  top: 60px;
-  @include transition(top 1s, opacity 1s);
+  // top: 60px;
+  // @include transition(top 1s, opacity 1s);
+  top: 40px;
+  @include transition(top 0.6s, opacity 0.6s);
   opacity: 0;
 
   &.visible {
@@ -196,9 +203,8 @@ select::-ms-expand {
 }
 
 body {
-  background: #1E1E1E;
-  background: #000;
-  color: #fff;
+  background: #0C0C0C;
+  color: #FCFAF2;
   &.fixed {
     overflow: hidden;
   }

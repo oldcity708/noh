@@ -67,14 +67,14 @@ include $path.'/libs/meta.php';
           </div>
         </div>
         <div class="right">
-          <p class="c-text01">能の精神と現代ファッション、AR技術の融合を通じて、新たな自己表現の形を模索するブランド「NOH」。ブランドの世界観は3体のキャラクター、RYUJIN・ONI-CHAN・KOCHOを通じて構築され、ARと能という日本の伝統芸術を組み合わせることで、新しい自己を発見し、人々とつながる新たな手段を提供する。</p>  
+          <p class="c-text01" data-trigger>能の精神と現代ファッション、AR技術の融合を通じて、新たな自己表現の形を模索するブランド「NOH」。ブランドの世界観は3体のキャラクター、RYUJIN・ONI-CHAN・KOCHOを通じて構築され、ARと能という日本の伝統芸術を組み合わせることで、新しい自己を発見し、人々とつながる新たな手段を提供する。</p>  
         </div>
       </div>
       <div class="technology__img">
-        <div class="img img01">
+        <div class="img img01" data-trigger>
           <img src="./images/top/technology_img_01.png" alt="">
         </div>
-        <div class="img img02">
+        <div class="img img02" data-trigger>
           <img src="./images/top/technology_img_02.png" alt="">
         </div>
       </div>
@@ -86,10 +86,10 @@ include $path.'/libs/meta.php';
     <div class="inner">
       <div class="cont">
         <div class="fashion__head">
-          <h2><img src="./images/common/fashion_ttl.svg" alt="Phygital Fashion NOH by XRT"></h2>
-          <p class="c-text01">フィジタルとは、Physical（フィジカル）とDigital（デジタル）をかけ合わせた造語で、リアル世界とデジタル世界を融合させることであり、物理的な要素とデジタル要素を兼ね備えた体験をユーザーに提供します。</p>
+          <h2 data-trigger><img src="./images/common/fashion_ttl.svg" alt="Phygital Fashion NOH by XRT"></h2>
+          <p class="c-text01" data-trigger>フィジタルとは、Physical（フィジカル）とDigital（デジタル）をかけ合わせた造語で、リアル世界とデジタル世界を融合させることであり、物理的な要素とデジタル要素を兼ね備えた体験をユーザーに提供します。</p>
         </div>
-        <div class="fashion__list-wrap">
+        <div class="fashion__list-wrap" data-trigger>
           <ul class="fashion__list">
             <li>
               <a href="">
@@ -116,7 +116,7 @@ include $path.'/libs/meta.php';
                 </div>
               </a>
             </li>
-            <li>
+            <li class="current-slide">
               <a href="">
                 <div class="image-wrap">
                   <div class="image">
@@ -207,8 +207,8 @@ include $path.'/libs/meta.php';
           </div>
         </div>
         <div class="right">
-          <p class="c-text01">アセットの所有を証明し、利用権を与える。リアルワールド用のTシャツの発行とデジタルワールドでのTシャツの着用（開発中）が可能。</p>
-          <div class="asset__thumb-slider swiper">
+          <p class="c-text01" data-trigger>アセットの所有を証明し、利用権を与える。リアルワールド用のTシャツの発行とデジタルワールドでのTシャツの着用（開発中）が可能。</p>
+          <div class="asset__thumb-slider swiper" data-trigger>
             <div class="swiper-wrapper">
               <div class="asset__thumb-slider__slide swiper-slide">
                 <img src="./images/top/asset_img_01.jpg" alt="">
@@ -243,7 +243,7 @@ include $path.'/libs/meta.php';
               <span class="c-text-shuffle--element">and technology</span>
             </h2>
           </div>
-          <p class="c-text01">NFCタグ封入のXRTオリジナルチップ。スマホをかざすとARフィルターが起動し、Tシャツを拡張する。チップとNFTのPOAPが連動し、集めることで表現が変化するなどの特典も。</p>
+          <p class="c-text01" data-trigger>NFCタグ封入のXRTオリジナルチップ。スマホをかざすとARフィルターが起動し、Tシャツを拡張する。チップとNFTのPOAPが連動し、集めることで表現が変化するなどの特典も。</p>
         </div>
       </div>
       <div class="col2">
@@ -318,10 +318,10 @@ include $path.'/libs/meta.php';
         </div>
       </div>
       <div class="product__image">
-        <img src="./images/top/product_img_01.png" alt="">
+        <img data-trigger src="./images/top/product_img_01.png" alt="">
       </div>
       <ul class="product__detail">
-        <li>
+        <li data-trigger>
           <div class="product__detail__image">
             
           </div>
@@ -330,7 +330,7 @@ include $path.'/libs/meta.php';
             <p class="text">服のNFCタグを読み込むことでXRライセンスとの紐付けが可能。また、胸のARマーカーを読み込むことでTシャツがXR表現で拡張される。</p>
           </div>
         </li>
-        <li>
+        <li data-trigger>
           <div class="product__detail__image">
             
           </div>
@@ -339,7 +339,7 @@ include $path.'/libs/meta.php';
             <p class="text">服のNFCタグを読み込むことでXRライセンスとの紐付けが可能。また、胸のARマーカーを読み込むことでTシャツがXR表現で拡張される。</p>
           </div>
         </li>
-        <li>
+        <li data-trigger>
           <div class="product__detail__image">
             
           </div>
@@ -364,9 +364,9 @@ include $path.'/libs/meta.php';
             <span class="c-text-shuffle--element">and technology</span>
           </h2>
         </div>
-        <p class="c-text01">オリジナルチップで起動したARフィルターで胸のARマーカーを読み込むことで、キャラクターから生まれたお面が具現化し、それぞれの特性にそったエフェクトを纏うことができる。</p>
+        <p class="c-text01" data-trigger>オリジナルチップで起動したARフィルターで胸のARマーカーを読み込むことで、キャラクターから生まれたお面が具現化し、それぞれの特性にそったエフェクトを纏うことができる。</p>
       </div>
-      <div class="effect__list-wrap">
+      <div class="effect__list-wrap" data-trigger>
         <ul class="effect__list">
           <li>
             <div class="effect__list__wrap">
@@ -406,7 +406,7 @@ include $path.'/libs/meta.php';
           </li>
         </ul>
       </div>
-      <span class="message">A world where a healthy and prosperous life can be built through good connections.</span>
+      <span class="message" data-trigger>A world where a healthy and prosperous life can be built through good connections.</span>
     </div>
   </section>
 
@@ -438,10 +438,10 @@ include $path.'/libs/meta.php';
   <section class="comingsoon">
     <div class="inner">
       <ul class="comingsoon__list">
-        <li>
+        <li data-trigger>
           <div></div>
         </li>
-        <li>
+        <li data-trigger>
           <div></div>
         </li>
       </ul>

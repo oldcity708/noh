@@ -9,7 +9,7 @@
     padding: 88px 30px 80px;
     position: relative;
     @include SP {
-      padding: 44px 16px 30px;
+      padding: 56px 16px 52px;
     }
     &:before {
       content: "";
@@ -27,19 +27,21 @@
     padding: 0 30px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 72px;
+    margin-bottom: 48px;
+    position: relative;
     @include SP {
       padding: 0;
       display: block;
-      margin-bottom: 36px;
+      margin-bottom: 40px;
     }
 
     h2 {
       width: 49.4845%;
       @include SP {
         // width: 100%;
-        width: 80%;
-        margin-bottom: 16px;
+        // width: 80%;
+        width: 59.59302326%;
+        margin-bottom: 24px;
       }
     }
 
@@ -47,14 +49,17 @@
       width: 43.299%;
       @include SP {
         width: 100%;
+        text-align: justify;
       }
     }
   }
 
   &__list-wrap {
+    position: relative;
     @include SP {
       overflow-x: scroll;
       padding-bottom: 10px;
+      margin: 0 -16px;
       &::-webkit-scrollbar {
         height: 3px;
         width: 3px;
@@ -72,13 +77,16 @@
     display: flex;
     justify-content: space-between;
     @include SP {
-      width: 760px;
+      // width: 760px;
+      width: 708px;
     }
 
     li {
       width: calc((100% - 120px) / 3);
       position: relative;
-
+      @include SP {
+        width: calc((100% - 96px) / 3);
+      }
       &:last-of-type {
         .image-wrap {
           &:after {
@@ -88,19 +96,27 @@
       }
     }
 
-    a {}
+    a {
+      &:hover {
+        opacity: 1;
+      }
+    }
 
     .image-wrap {
       position: relative;
       &:after {
         content: "";
-        width: 36px;
-        height: 26px;
+        width: 32px;
+        height: 28px;
         display: block;
         background: url(../images/common/arrow.svg)center center/cover no-repeat;
         position: absolute;
         top: 50%;
-        right: -48px;
+        right: -46px;
+        transform: translate(0, -50%);
+        @include SP {
+          right: -40px;
+        }
       }
     }
 
@@ -110,6 +126,9 @@
       overflow: hidden;
       padding-top: 178%;
       z-index: 1;
+      @include SP {
+        border-radius: 16px;
+      }
       
       .thumb {
         position: absolute;
@@ -153,7 +172,8 @@
         bottom: 73px;
         padding: 0 8px;
         @include SP {
-          bottom: 60px
+          bottom: 65px;
+          padding: 0 10px;
         }
 
         .tag-list {
@@ -179,6 +199,7 @@
             white-space: nowrap;
             @include SP {
               @include font-size(12);
+              border-radius: 24px;
             }
           }
         }
@@ -197,6 +218,9 @@
         position: absolute;
         left: 0;
         bottom: -1px;
+        @include SP {
+          border-radius: 0px 0px 16px 16px;
+        }
 
         span {
           @include font-size(24);
@@ -219,6 +243,9 @@
         line-height: 1.8;
         letter-spacing: 0.05em;
         color: #8E909A;
+        @include SP {
+          text-align: justify;
+        }
       }
     }
   }

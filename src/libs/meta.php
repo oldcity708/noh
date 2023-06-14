@@ -14,7 +14,7 @@
     // タブレット用の固定Viewport設定
     // タブレットで閲覧した際は、$widthに設定したwidthで表示される
     if ($ua->set() === 'tablet') :
-        $width = '1124px';
+        $width = '1280px';
 ?>
 
 <meta content="width=<?php echo $width; ?>,initial-scale=1.0,maximum-scale=1.0" name="viewport">
@@ -54,7 +54,7 @@
 <meta property="og:title" content="<?php echo $seo_title?>">
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?php echo 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>">
-<meta property="og:image" content="">
+<meta property="og:image" content="<?php echo APP_URL; ?>images/favicons/ogp.jpg">
 <meta property="og:site_name" content="">
 <meta property="og:description" content="<?php echo $seo_description; ?>" />
 <meta property="fb:app_id" content="">
@@ -64,7 +64,9 @@
 ======================================================================-->
 <link rel="stylesheet" href="https://use.typekit.net/tps8mky.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp.min.css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <!-- Swiper
 ======================================================================-->
@@ -77,10 +79,14 @@
 
 <!-- Favicon
 ======================================================================-->
-<link rel="icon" href="<?php echo APP_URL; ?>images/favicons/favicon.ico">
+<!-- <link rel="icon" href="<?php echo APP_URL; ?>images/favicons/favicon.ico">
 <link rel="shortcut icon" href="<?php echo APP_URL; ?>images/favicons/favicon.ico">
-<link rel="apple-touch-icon" href="<?php echo APP_URL; ?>images/favicons/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="<?php echo APP_URL; ?>images/favicons/apple-touch-icon.png"> -->
 
+<link rel="icon" href="<?php echo APP_URL; ?>images/favicons/favicon.ico" sizes="any"><!-- 32×32 -->
+<link rel="icon" href="<?php echo APP_URL; ?>images/favicons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="<?php echo APP_URL; ?>images/favicons/apple-touch-icon.png"><!-- 180×180 -->
+<link rel="manifest" href="<?php echo APP_URL; ?>images/favicons/manifest.webmanifest">
 
 <!-- IE Hack
 ======================================================================-->

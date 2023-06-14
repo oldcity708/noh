@@ -14,7 +14,8 @@
     position: relative;
     border-radius: 24px;
     @include SP {
-      padding: 64px 16px;
+      // padding: 64px 16px;
+      padding: 64px 24px;
       align-items: flex-start;
       min-height: 740px;
     }

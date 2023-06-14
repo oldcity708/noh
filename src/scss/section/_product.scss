@@ -17,6 +17,9 @@
     @include PC {
       text-align: right;
     }
+    @include SP {
+      padding: 0 8px;
+    }
     .c-sub-ttl {
       display: block;
       margin-bottom: 32px;
@@ -40,9 +43,13 @@
   }
   &__detail {
     order: 1;
+    @include SP {
+      width: 79.30029155%;
+      margin: 0 auto;
+    }
     li {
       width: 240px;
-      margin-bottom: 80px;
+      margin-bottom: 88px;
       @include SP {
         width: 100%;
         margin-bottom: 40px;
@@ -51,7 +58,7 @@
         @include PC {
           position: absolute;
           right: 40px;
-          top: 322px;            
+          top: 490px;            
         }
       }
     }
@@ -59,7 +66,7 @@
       border-radius: 24px;
       border: 1px solid #4D4F5A;
       padding-top: 100%;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
     }
     &__text {
 
@@ -71,7 +78,7 @@
       letter-spacing: .05em;
       color: #FCFAF2;
       display: block;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
       @include SP {
         margin-bottom: 18px;
       }

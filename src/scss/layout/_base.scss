@@ -101,8 +101,14 @@ a {
   color: inherit;
   text-decoration: none;
   transition: opacity .3s ease;
+  @include SP {
+    transition: opacity .3s;
+  }
   &:hover {
     opacity: 0.7;
+    @include SP {
+      opacity: 1;
+    }
   }
 }
 
@@ -180,7 +186,8 @@ select::-ms-expand {
  */
 
 .inner {
-  max-width: 1160px;
+  // max-width: 1160px;
+  max-width: 1360px;
   padding: 0 40px;
   margin: 0 auto;
   @include SP {

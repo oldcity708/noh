@@ -406,7 +406,7 @@ include $path.'/libs/meta.php';
           </li>
         </ul>
       </div>
-      <span class="message" data-trigger>A world where a healthy and prosperous life can be built through good connections.</span>
+      <span class="message" data-trigger>A world where a healthy and prosperous life can be built <br class="pc">through good connections.</span>
     </div>
   </section>
 

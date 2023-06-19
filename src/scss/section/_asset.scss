@@ -1,6 +1,9 @@
 .asset {
-  padding: 32px 0 295px;
+  padding: 32px 0 355px;
   overflow: hidden;
+  @include max-screen(1360px){
+    padding-bottom: 26vw;
+  }
   @include SP {
     padding: 32px 0 68px;
   }

@@ -60,14 +60,14 @@ include $path.'/libs/meta.php';
         <div class="left">
           <div class="c-text-shuffle" id="shuffle01">
             <h2>
-              <span class="c-text-shuffle--element">The intersection of</span><br>
-              <span class="c-text-shuffle--element">Japanese culture</span><br>
-              <span class="c-text-shuffle--element">and technology</span>
+              <span class="c-text-shuffle--element">Expand Japanese</span><br>
+              <span class="c-text-shuffle--element">culture through XR</span><br>
+              <span class="c-text-shuffle--element">communication.</span>
             </h2>
           </div>
         </div>
         <div class="right">
-          <p class="c-text01" data-trigger>能の精神と現代ファッション、AR技術の融合を通じて、新たな自己表現の形を模索するブランド「NOH」。ブランドの世界観は3体のキャラクター、RYUJIN・ONI-CHAN・KOCHOを通じて構築され、ARと能という日本の伝統芸術を組み合わせることで、新しい自己を発見し、人々とつながる新たな手段を提供する。</p>  
+          <p class="c-text01" data-trigger>日本の伝統芸能である"能"の精神を背景に、3体のキャラクター『RYUJIN』『ONI-CHAN』『KOCHO』の特性に応じた異能を身にまとうことができるファッションプロジェクト。<br>XRコミュニケーションにより世界観を拡張するファッション新規格「XRT」の技術により構築され、デジタルアイテムとフィジカルアイテムが紐づくことで、次世代の自己表現の形を模索する。</p>  
         </div>
       </div>
       <div class="technology__img">
@@ -87,7 +87,7 @@ include $path.'/libs/meta.php';
       <div class="cont">
         <div class="fashion__head">
           <h2 data-trigger><img src="./images/common/fashion_ttl.svg" alt="Phygital Fashion NOH by XRT"></h2>
-          <p class="c-text01" data-trigger>フィジタルとは、Physical（フィジカル）とDigital（デジタル）をかけ合わせた造語で、リアル世界とデジタル世界を融合させることであり、物理的な要素とデジタル要素を兼ね備えた体験をユーザーに提供します。</p>
+          <p class="c-text01" data-trigger>フィジタルとは、Physical（フィジカル）とDigital（デジタル）をかけ合わせた造語。フィジカル、フィジタル、デジタルそれぞれのアイテムが相互に紐付くことで、メディアに囚われない新しいファッション体験の提供を目指す。</p>
         </div>
         <div class="fashion__list-wrap" data-trigger>
           <ul class="fashion__list">
@@ -99,20 +99,19 @@ include $path.'/libs/meta.php';
                     <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
                     <div class="tag">
                       <div class="tag-list">
-                        <span>NFC TAG</span>
-                        <span>XR</span>
+                        <span>WORLD：現実</span>
                       </div>
                       <div class="tag-list">
-                        <span>現実</span>
+                        <span>TECH：NFC, AR</span>
                       </div>
                     </div>
                     <div class="bottom">
-                      <span>PHYSICAL ASSET</span>
+                      <span>PHYSICAL ITEM</span>
                     </div>
                   </div>
                 </div>
                 <div class="text">
-                  <p>服のNFCタグを読み込むことでXRライセンスとの紐付けが可能。また、胸のARマーカーを読み込むことでTシャツがXR表現で拡張される。</p>
+                  <p>アクティベーションタグを読み込むことでフィジタルアイテムとの紐付けが可能。カメラでARマーカーを読み込むことで衣服がAR表現により拡張される。</p>
                 </div>
               </a>
             </li>
@@ -125,19 +124,19 @@ include $path.'/libs/meta.php';
                     <!-- <div class="thumb"><img src="./images/top/fashion_img_02.png" alt=""></div> -->
                     <div class="tag">
                       <div class="tag-list">
-                        <span>NFC</span>
+                        <span>WORLD：分散型データベース</span>
                       </div>
                       <div class="tag-list">
-                        <span>所有証明&キー</span>
+                        <span>TECH：NFT</span>
                       </div>
                     </div>
                     <div class="bottom">
-                      <span>PHYSICAL ASSET</span>
+                      <span>PHYGITAL ITEM</span>
                     </div>
                   </div>
                 </div>
                 <div class="text">
-                  <p>リアルでの所有と紐付け所有証明と各種権利へのアクセスキーとなり、リアル世界とデジタル世界を繋ぐアイテムとなる。</p>
+                  <p>各アイテムと紐づけることで、それぞれのアイテムの所有を証明し、各種ライセンスや体験へのアクセスキーとなる。</p>
                 </div>
               </a>
             </li>
@@ -150,19 +149,19 @@ include $path.'/libs/meta.php';
                     <!-- <div class="thumb"><img src="./images/top/fashion_img_03.png" alt=""></div> -->
                     <div class="tag">
                       <div class="tag-list">
-                        <span>METAVERSE</span>
+                        <span>WORLD：ゲーム, メタバース</span>
                       </div>
                       <div class="tag-list">
-                        <span>デジタルワールド</span>
+                        <span>TECH：(開発中)</span>
                       </div>
                     </div>
                     <div class="bottom">
-                      <span>DIGITAL ASSET</span>
+                      <span>DIGITAL ITEM</span>
                     </div>  
                   </div>
                 </div>
                 <div class="text">
-                  <p>ライセンスの所有者のみがアクセスできる分散型データベースにアクセスが可能。メタバースでTシャツの着用が可能（開発中）に。</p>
+                  <p>各種ゲームや、メタバースをプレイ時に分散型データベースにアクセス。アイテムの所有が確認されると、ゲームや、メタバースでの衣服着用が可能になる。（開発中）</p>
                 </div>
               </a>
             </li>
@@ -197,17 +196,18 @@ include $path.'/libs/meta.php';
           </div>
         </div>
         <div class="left">
-          <span class="c-sub-ttl">( XRT TECHNOLOGY - PHYGITAL ASSET )</span>
+          <span class="c-sub-ttl">FEATURED TECH - PHYGITAL ITEM（NFT）</span>
           <div class="c-text-shuffle" id="shuffle02">
             <h2>
-              <span class="c-text-shuffle--element">The intersection of</span>
-              <span class="c-text-shuffle--element">Japanese culture</span><br>
-              <span class="c-text-shuffle--element">and technology</span>
+              <span class="c-text-shuffle--element">Blockchain verifies</span>
+              <span class="c-text-shuffle--element">ownership,</span><br>
+              <span class="c-text-shuffle--element">links your own</span><br>
+              <span class="c-text-shuffle--element">items.</span>
             </h2>
           </div>
         </div>
         <div class="right">
-          <p class="c-text01" data-trigger>アセットの所有を証明し、利用権を与える。リアルワールド用のTシャツの発行とデジタルワールドでのTシャツの着用（開発中）が可能。</p>
+          <!-- <p class="c-text01" data-trigger>アセットの所有を証明し、利用権を与える。リアルワールド用のTシャツの発行とデジタルワールドでのTシャツの着用（開発中）が可能。</p> -->
           <div class="asset__thumb-slider swiper" data-trigger>
             <div class="swiper-wrapper">
               <div class="asset__thumb-slider__slide swiper-slide">
@@ -235,15 +235,14 @@ include $path.'/libs/meta.php';
       <div class="cont-01">
         <div class="img"><img src="./images/top/chip_bg.png" alt=""></div>
         <div class="text">
-          <span class="c-sub-ttl">( XRT TECHNOLOGY - CHIP )</span>
+          <span class="c-sub-ttl">FEATURED TECH - CHIP（NFC）</span>
           <div class="c-text-shuffle" id="shuffle03">
             <h2>
-              <span class="c-text-shuffle--element">The intersection of</span><br>
-              <span class="c-text-shuffle--element">Japanese culture</span><br>
-              <span class="c-text-shuffle--element">and technology</span>
+              <span class="c-text-shuffle--element">Infuse animation</span><br>
+              <span class="c-text-shuffle--element">with a wearable chip.</span>
             </h2>
           </div>
-          <p class="c-text01" data-trigger>NFCタグ封入のXRTオリジナルチップ。スマホをかざすとARフィルターが起動し、Tシャツを拡張する。チップとNFTのPOAPが連動し、集めることで表現が変化するなどの特典も。</p>
+          <p class="c-text01" data-trigger>キャラクターの異能を封じ込めたオリジナルチップ。衣服のホルダーへ装着し、内蔵されたNFCタグへスマートフォンをかざすことで、ARフィルターを起動する。</p>
         </div>
       </div>
       <div class="col2">
@@ -308,12 +307,16 @@ include $path.'/libs/meta.php';
   <section class="product">
     <div class="inner">
       <div class="product__ttl">
-        <span class="c-sub-ttl">( XRT TECHNOLOGY - AR EFFECT )</span>
-        <div class="c-text-shuffle">
-          <h2>
-            <span class="c-text-shuffle--element">The intersection of</span><br>
-            <span class="c-text-shuffle--element">Japanese culture</span><br>
-            <span class="c-text-shuffle--element">and technology</span>
+        <span class="c-sub-ttl">FEATURED TECH - PHYGICAL ITEM（T-Shirts）</span>
+        <div class="c-text-shuffle" id="shuffle05">
+          <h2 class="pc">
+            <span class="c-text-shuffle--element">Custom-designed T-shirt</span><br>
+            <span class="c-text-shuffle--element">materializes animation</span>
+          </h2>
+          <h2 class="sp">
+            <span class="c-text-shuffle--element">Custom-designed</span><br>
+            <span class="c-text-shuffle--element">T-shirt</span><br>
+            <span class="c-text-shuffle--element">materializes animation</span>
           </h2>
         </div>
       </div>
@@ -327,16 +330,7 @@ include $path.'/libs/meta.php';
           </div>
           <div class="product__detail__text">
             <span class="item">ARマーカー</span>
-            <p class="text">服のNFCタグを読み込むことでXRライセンスとの紐付けが可能。また、胸のARマーカーを読み込むことでTシャツがXR表現で拡張される。</p>
-          </div>
-        </li>
-        <li data-trigger>
-          <div class="product__detail__image">
-            
-          </div>
-          <div class="product__detail__text">
-            <span class="item">チップホルダー</span>
-            <p class="text">服のNFCタグを読み込むことでXRライセンスとの紐付けが可能。また、胸のARマーカーを読み込むことでTシャツがXR表現で拡張される。</p>
+            <p class="text">前面にプリントされた、編み込みパターンがARマーカーになっており、カメラで読み込むことでARエフェクトが発動する。</p>
           </div>
         </li>
         <li data-trigger>
@@ -345,7 +339,16 @@ include $path.'/libs/meta.php';
           </div>
           <div class="product__detail__text">
             <span class="item">アクティベーションタグ</span>
-            <p class="text">服のNFCタグを読み込むことでXRライセンスとの紐付けが可能。また、胸のARマーカーを読み込むことでTシャツがXR表現で拡張される。</p>
+            <p class="text">裾に縫い付けられたタグへスマートフォンをかざすことで、ユーザーのウォレットとデータベースを参照し所有者を認証する。</p>
+          </div>
+        </li>
+        <li data-trigger>
+          <div class="product__detail__image">
+            
+          </div>
+          <div class="product__detail__text">
+            <span class="item">チップホルダー</span>
+            <p class="text">袖口にあしらわれたホルダーパーツ。オリジナルチップを自由に脱着することができる。</p>
           </div>
         </li>
       </ul>
@@ -356,15 +359,14 @@ include $path.'/libs/meta.php';
   <section class="effect">
     <div class="inner">
       <div class="effect__text">
-        <span class="c-sub-ttl">( XRT TECHNOLOGY - AR EFFECT )</span>
+        <span class="c-sub-ttl">FEATURED TECH - AR EFFECT</span>
         <div class="c-text-shuffle" id="shuffle04">
           <h2>
-            <span class="c-text-shuffle--element">The intersection of</span>
-            <span class="c-text-shuffle--element">Japanese culture</span>
-            <span class="c-text-shuffle--element">and technology</span>
+            <span class="c-text-shuffle--element">Wear extraordinary,</span><br>
+            <span class="c-text-shuffle--element">a marvel of an experience.</span>
           </h2>
         </div>
-        <p class="c-text01" data-trigger>オリジナルチップで起動したARフィルターで胸のARマーカーを読み込むことで、キャラクターから生まれたお面が具現化し、それぞれの特性にそったエフェクトを纏うことができる。</p>
+        <p class="c-text01" data-trigger>チップへかざす、カメラで読み込むというシンプルな動作でシームレスにARエフェクトが発動。いつでも、キャラクターの異能を身にまとうことができる。</p>
       </div>
       <div class="effect__list-wrap" data-trigger>
         <ul class="effect__list">
@@ -406,7 +408,7 @@ include $path.'/libs/meta.php';
           </li>
         </ul>
       </div>
-      <span class="message" data-trigger>A world where a healthy and prosperous life can be built <br class="pc">through good connections.</span>
+      <span class="message" data-trigger>Anime, Manga, Games,,,<br>Let's start a new play that expands our world, along with the <br class="pc">beloved culture that overflows in Japan.<br>XRT starts.</span>
     </div>
   </section>
 

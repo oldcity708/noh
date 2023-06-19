@@ -9,15 +9,15 @@
   }
   &#shuffle02 {
     @include PC {
-      height: 148px;
+      height: 198px;
     }
     @include SP {
-      height: 125px;
+      height: 167px;
     }
   }
   &#shuffle03 {
     @include PC {
-      height: 148px;
+      height: 99px;
     }
     @include SP {
       height: 125px;
@@ -25,10 +25,18 @@
   }
   &#shuffle04 {
     @include PC {
-      height: 148px;
+      height: 99px;
     }
     @include SP {
       height: 125px;
+    }
+  }
+  &#shuffle05 {
+    @include PC {
+      // height: 99px;
+    }
+    @include SP {
+      height: 166px;
     }
   }
   &--element {

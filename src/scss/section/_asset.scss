@@ -1,5 +1,5 @@
 .asset {
-  padding: 32px 0 135px;
+  padding: 32px 0 295px;
   overflow: hidden;
   @include SP {
     padding: 32px 0 68px;
@@ -42,8 +42,8 @@
     width: 300px;
     z-index: -1;
     left: 50%;
-    // top: 50%;
-    top: calc(50% - 40px);
+    top: calc(50% - 5px);
+    // top: calc(50% - 40px);
     transform: translate(-50%,-50%);
     @include SP {
       z-index: +1;
@@ -65,7 +65,7 @@
     }
   }
   &__thumb-slider {
-    margin-top: 48px;
+    // margin-top: 48px;
     @include SP {
       margin-top: 0px;
       order: 1;

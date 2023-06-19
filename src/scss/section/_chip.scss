@@ -7,7 +7,7 @@
   .cont-01 {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    // justify-content: flex-end;
     padding: 0 60px;
     min-height: 608px;
     background: url(../images/top/chip_article.png)center center/cover no-repeat;
@@ -17,7 +17,7 @@
       // padding: 64px 16px;
       padding: 64px 24px;
       align-items: flex-start;
-      min-height: 740px;
+      min-height: 218vw;
     }
 
     &:before {
@@ -36,18 +36,23 @@
     }
 
     .img {
-      width: 50%;
+      // width: 50%;
+      width: 33.33333333%;
       position: absolute;
       bottom: 0;
-      left: 60px;
+      // right: 120px;
+      right: 11.11111111%;
       @include SP {
         // width: 100%;
-        width: 90%;
+        // width: 90%;
+        width: 60%;
       }
     }
 
     .text {
-      width: 37.5%;
+      // width: 37.5%;
+      // width: 38.88888889%;
+      width: 43.8%;
       position: relative;
       @include SP {
         width: 100%;
@@ -79,12 +84,20 @@
     }
 
     .row {
-      padding: 16px 0;
+      // padding: 16px 0;
       position: relative;
       display: flex;
       align-items: center;
       overflow: hidden;
       white-space: nowrap;
+      @include PC {
+        // height: 140px;
+        height: 12.06896552vw;
+        max-height: 166px;
+      }
+      @include SP {
+        height: 80px;
+      }
 
       &:last-of-type {
         &:after {
@@ -118,8 +131,10 @@
           animation-name: scrollEn;
 
           .img {
-            width: 535px;
-            margin-left: -10px;
+            width: 43.96551724vw;
+            max-width: 510px;
+            // margin-left: -10px;
+            margin-right: 14px;
             @include SP {
               width: 267.5px;
               margin-left: -5px;
@@ -129,8 +144,10 @@
 
         &.row03 {
           .img {
-            width: 639px;
-            margin-left: -10px;
+            width: 52.241379vw;
+            max-width: 606px;
+            // margin-left: -10px;
+            margin-right: 24px;
             @include SP {
               width: 319.5px;
               margin-left: -5px;
@@ -139,9 +156,10 @@
         }
 
         .img {
-          width: 652px;
-          margin-right: 0;
-          margin-left: -10px;
+          width: 53.53448276vw;
+          max-width: 621px;
+          margin-right: 21px;
+          // margin-left: -10px;
           @include SP {
             width: 326px;
             margin-left: -5px;

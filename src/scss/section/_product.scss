@@ -1,5 +1,5 @@
 .product {
-  padding: 104px 0 94px;
+  padding: 104px 0 16px;
   @include SP {
     padding: 52px 0 47px;
   }
@@ -12,10 +12,10 @@
     }
   }
   &__ttl {
-    order: 2;
+    order: 1;
     // width: 360px;
     @include PC {
-      text-align: right;
+      text-align: left;
     }
     @include SP {
       padding: 0 8px;
@@ -29,9 +29,9 @@
     }
   }
   &__image {
-    width: 457.5px;
+    width: 453px;
     position: absolute;
-    top: 40%;
+    top: 46%;
     left: 49%;
     transform: translate(-50%,-50%);
     @include SP {
@@ -42,7 +42,7 @@
     }
   }
   &__detail {
-    order: 1;
+    order: 2;
     @include SP {
       width: 79.30029155%;
       margin: 0 auto;
@@ -57,8 +57,8 @@
       &:nth-of-type(2){
         @include PC {
           position: absolute;
-          right: 40px;
-          top: 490px;            
+          left: 40px;
+          top: 468px;            
         }
       }
     }

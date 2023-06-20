@@ -58,23 +58,25 @@ include $path.'/libs/meta.php';
           <svg xmlns="http://www.w3.org/2000/svg" width="278.083" height="246.169" viewBox="0 0 278.083 246.169"><path id="path03" data-name="path03" d="M804.917,3.415h-.5v245.17h41.171V141.077H1040.33V248.585h41.17V3.415h-41.17V107.278H845.588V3.415H804.917Z" transform="translate(-803.917 -2.916)" fill="none" stroke="#fcfaf2" stroke-width="1" opacity="0.25" style="visibility: visible; stroke-dashoffset: 0; stroke-dasharray: none;"></path></svg>
         </div>
         <div class="left">
-          <div class="c-text-shuffle" id="shuffle01">
+          <div class="c-text-shuffle" id="shuffle01" data-trigger>
             <h2>
-              <span class="c-text-shuffle--element">The intersection of</span><br>
-              <span class="c-text-shuffle--element">Japanese culture</span><br>
-              <span class="c-text-shuffle--element">and technology</span>
+              <span class="c-text-shuffle--element">Expand Japanese</span><br>
+              <span class="c-text-shuffle--element">culture through XR</span><br>
+              <span class="c-text-shuffle--element">communication.</span>
             </h2>
           </div>
         </div>
         <div class="right">
-          <p class="c-text01">能の精神と現代ファッション、AR技術の融合を通じて、新たな自己表現の形を模索するブランド「NOH」。ブランドの世界観は3体のキャラクター、RYUJIN・ONI-CHAN・KOCHOを通じて構築され、ARと能という日本の伝統芸術を組み合わせることで、新しい自己を発見し、人々とつながる新たな手段を提供する。</p>  
+          <p class="c-text01" data-trigger>"This is a fashion project that allows the wearer to possess the psychic powers of three characters ""RYUJIN"", ""ONI-CHAN"", and ""KOCHO"", who possess the spirit of ""Noh"", a traditional Japanese performing art.<br>The project is built on the ""XRT"" technology, a new standard for fashion that extends the world view through ""XR communication"". <br>Digital items and physical items can be authenticated with each other to create a next-generation identity."</p>  
         </div>
       </div>
       <div class="technology__img">
-        <div class="img img01">
-          <img src="../images/top/technology_img_01.png" alt="">
+        <div class="img img01" data-trigger>
+          <video autoplay="" muted="muted" playsinline="playsinline" loop="loop">
+            <source src="../movie/noh_ryujin.mp4" type="video/mp4">
+          </video>
         </div>
-        <div class="img img02">
+        <div class="img img02" data-trigger>
           <img src="../images/top/technology_img_02.png" alt="">
         </div>
       </div>
@@ -86,86 +88,87 @@ include $path.'/libs/meta.php';
     <div class="inner">
       <div class="cont">
         <div class="fashion__head">
-          <h2><img src="../images/common/fashion_ttl.svg" alt="Phygital Fashion NOH by XRT"></h2>
-          <p class="c-text01">フィジタルとは、Physical（フィジカル）とDigital（デジタル）をかけ合わせた造語で、リアル世界とデジタル世界を融合させることであり、物理的な要素とデジタル要素を兼ね備えた体験をユーザーに提供します。</p>
+          <h2 data-trigger><img src="../images/common/fashion_ttl.svg" alt="Phygital Fashion NOH by XRT"></h2>
+          <p class="c-text01" data-trigger>Phygital is a new word combining Physical and Digital." Physical," "Phygital," and "Digital" Each item is mutually authenticated to provide a new, cross-media, fashion experience.</p>
         </div>
-        <ul class="fashion__list">
-          <li>
-            <a href="">
-              <div class="image-wrap">
-                <div class="image">
-                  <div class="thumb"><img src="../images/top/alien.png" alt=""></div>
-                  <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
-                  <div class="tag">
-                    <div class="tag-list">
-                      <span>NFC TAG</span>
-                      <span>XR</span>
+        <div class="fashion__list-wrap" data-trigger>
+          <ul class="fashion__list">
+            <li>
+              <a href="">
+                <div class="image-wrap">
+                  <div class="image">
+                    <div class="thumb"><img src="../images/top/fashion_img_01.png" alt=""></div>
+                    <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
+                    <div class="tag">
+                      <div class="tag-list">
+                        <span>WORLD：Real</span>
+                      </div>
+                      <div class="tag-list">
+                        <span>TECH：NFC, AR</span>
+                      </div>
                     </div>
-                    <div class="tag-list">
-                      <span>現実</span>
+                    <div class="bottom">
+                      <span>PHYSICAL ITEM</span>
                     </div>
-                  </div>
-                  <div class="bottom">
-                    <span>PHYSICAL ASSET</span>
                   </div>
                 </div>
-              </div>
-              <div class="text">
-                <p>服のNFCタグを読み込むことでXRライセンスとの紐付けが可能。また、胸のARマーカーを読み込むことでTシャツがXR表現で拡張される。</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div class="image-wrap">
-                <div class="image">
-                  <div class="thumb"><img src="../images/top/alien.png" alt=""></div>
-                  <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
-                  <!-- <div class="thumb"><img src="../images/top/fashion_img_02.png" alt=""></div> -->
-                  <div class="tag">
-                    <div class="tag-list">
-                      <span>NFC</span>
+                <div class="text">
+                  <p>By reading the activation tag, "physical items" and "digital items" are authenticated. By reading the AR marker with the camera, the garment is augmented with AR.</p>
+                </div>
+              </a>
+            </li>
+            <li class="current-slide">
+              <a href="">
+                <div class="image-wrap">
+                  <div class="image">
+                    <div class="thumb"><img src="../images/top/fashion_img_02.png" alt=""></div>
+                    <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
+                    <!-- <div class="thumb"><img src="../images/top/fashion_img_02.png" alt=""></div> -->
+                    <div class="tag">
+                      <div class="tag-list">
+                        <span>WORLD：Distributed database</span>
+                      </div>
+                      <div class="tag-list">
+                        <span>TECH：NFT</span>
+                      </div>
                     </div>
-                    <div class="tag-list">
-                      <span>所有証明&キー</span>
+                    <div class="bottom">
+                      <span>PHYGITAL ITEM</span>
                     </div>
-                  </div>
-                  <div class="bottom">
-                    <span>PHYSICAL ASSET</span>
                   </div>
                 </div>
-              </div>
-              <div class="text">
-                <p>リアルでの所有と紐付け所有証明と各種権利へのアクセスキーとなり、リアル世界とデジタル世界を繋ぐアイテムとなる。</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <div class="image-wrap">
-                <div class="image">
-                  <div class="thumb"><img src="../images/top/alien.png" alt=""></div>
-                  <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
-                  <!-- <div class="thumb"><img src="../images/top/fashion_img_03.png" alt=""></div> -->
-                  <div class="tag">
-                    <div class="tag-list">
-                      <span>METAVERSE</span>
-                    </div>
-                    <div class="tag-list">
-                      <span>デジタルワールド</span>
-                    </div>
-                  </div>
-                  <div class="bottom">
-                    <span>DIGITAL ASSET</span>
-                  </div>  
+                <div class="text">
+                  <p>By authenticating each other, each item proves that you own it and is an access key to various licenses and experiences.</p>
                 </div>
-              </div>
-              <div class="text">
-                <p>ライセンスの所有者のみがアクセスできる分散型データベースにアクセスが可能。メタバースでTシャツの着用が可能（開発中）に。</p>
-              </div>
-            </a>
-          </li>
-        </ul>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="image-wrap">
+                  <div class="image">
+                    <div class="thumb"><img src="../images/top/fashion_img_03.png" alt=""></div>
+                    <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
+                    <!-- <div class="thumb"><img src="../images/top/fashion_img_03.png" alt=""></div> -->
+                    <div class="tag">
+                      <div class="tag-list">
+                        <span>WORLD：Game,Metaverse</span>
+                      </div>
+                      <div class="tag-list">
+                        <span>TECH：(Under development)</span>
+                      </div>
+                    </div>
+                    <div class="bottom">
+                      <span>DIGITAL ITEM</span>
+                    </div>  
+                  </div>
+                </div>
+                <div class="text">
+                  <p>Access to a decentralized database when playing various games and in the metaverse. Once your item ownership is verified, you will be able to wear the garment in games and in the metaverse. (Under development)</p>
+                </div>
+              </a>
+            </li>
+          </ul>  
+        </div>
       </div>
     </div>
   </section>
@@ -181,43 +184,44 @@ include $path.'/libs/meta.php';
         <div class="asset__doll-slider swiper">
           <div class="swiper-wrapper">    
             <div class="asset__doll-slider__slide swiper-slide">
-              <img src="../images/top/asset_doll.png" alt="">
-              <!-- <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="https://community-lens.storage.googleapis.com/preview-media/final/e9f8ccc3-9bff-4952-b7f3-86afcfc0c139.mp4" type="video/mp4"></video> -->
+              <!-- <img src="./images/top/asset_doll.png" alt=""> -->
+              <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="../movie/230619_xrt_asset_ryujin_v10_alpha_compressed.mp4" type="video/mp4"></video>
             </div>
             <div class="asset__doll-slider__slide swiper-slide">
-              <img src="../images/top/asset_doll.png" alt="">
-              <!-- <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="https://community-lens.storage.googleapis.com/preview-media/final/bc0b59cb-0296-419a-acb7-7c8ec89aac0e.mp4" type="video/mp4"></video> -->
+              <!-- <img src="./images/top/asset_doll.png" alt=""> -->
+              <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="../movie/230619_xrt_asset_onichan_v10_alpha_compressed.mp4" type="video/mp4"></video>
             </div>
             <div class="asset__doll-slider__slide swiper-slide">
-              <img src="../images/top/asset_doll.png" alt="">
-              <!-- <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video> -->
+              <!-- <img src="./images/top/asset_doll.png" alt=""> -->
+              <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="../movie/230619_xrt_asset_cocho_v10_alpha_compressed.mp4" type="video/mp4" data-v-62372636=""></video>
             </div>
           </div>
         </div>
         <div class="left">
-          <span class="c-sub-ttl">( XRT TECHNOLOGY - PHYGITAL ASSET )</span>
-          <div class="c-text-shuffle" id="shuffle02">
+          <span class="c-sub-ttl" data-trigger>FEATURED TECH - PHYGITAL ITEM（NFT）</span>
+          <div class="c-text-shuffle" id="shuffle02" data-trigger>
             <h2>
-              <span class="c-text-shuffle--element">The intersection of</span>
-              <span class="c-text-shuffle--element">Japanese culture</span><br>
-              <span class="c-text-shuffle--element">and technology</span>
+              <span class="c-text-shuffle--element">Blockchain verifies</span>
+              <span class="c-text-shuffle--element">ownership,</span><br>
+              <span class="c-text-shuffle--element">links your own</span><br>
+              <span class="c-text-shuffle--element">items.</span>
             </h2>
           </div>
         </div>
         <div class="right">
-          <p class="c-text01">アセットの所有を証明し、利用権を与える。リアルワールド用のTシャツの発行とデジタルワールドでのTシャツの着用（開発中）が可能。</p>
-          <div class="asset__thumb-slider swiper">
+          <!-- <p class="c-text01" data-trigger>アセットの所有を証明し、利用権を与える。リアルワールド用のTシャツの発行とデジタルワールドでのTシャツの着用（開発中）が可能。</p> -->
+          <div class="asset__thumb-slider swiper" data-trigger>
             <div class="swiper-wrapper">
               <div class="asset__thumb-slider__slide swiper-slide">
                 <img src="../images/top/asset_img_01.jpg" alt="">
                 <span class="progress-bar"></span>
               </div>
               <div class="asset__thumb-slider__slide swiper-slide">
-                <img src="../images/top/asset_img_01.jpg" alt="">
+                <img src="../images/top/asset_img_02.jpg" alt="">
                 <span class="progress-bar"></span>
               </div>
               <div class="asset__thumb-slider__slide swiper-slide">
-                <img src="../images/top/asset_img_01.jpg" alt="">
+                <img src="../images/top/asset_img_03.jpg" alt="">
                 <span class="progress-bar"></span>
               </div>
             </div>
@@ -233,15 +237,14 @@ include $path.'/libs/meta.php';
       <div class="cont-01">
         <div class="img"><img src="../images/top/chip_bg.png" alt=""></div>
         <div class="text">
-          <span class="c-sub-ttl">( XRT TECHNOLOGY - CHIP )</span>
-          <div class="c-text-shuffle" id="shuffle03">
+          <span class="c-sub-ttl" data-trigger>FEATURED TECH - CHIP（NFC）</span>
+          <div class="c-text-shuffle" id="shuffle03" data-trigger>
             <h2>
-              <span class="c-text-shuffle--element">The intersection of</span><br>
-              <span class="c-text-shuffle--element">Japanese culture</span><br>
-              <span class="c-text-shuffle--element">and technology</span>
+              <span class="c-text-shuffle--element">Infuse animation</span><br>
+              <span class="c-text-shuffle--element">with a wearable chip.</span>
             </h2>
           </div>
-          <p class="c-text01">NFCタグ封入のXRTオリジナルチップ。スマホをかざすとARフィルターが起動し、Tシャツを拡張する。チップとNFTのPOAPが連動し、集めることで表現が変化するなどの特典も。</p>
+          <p class="c-text01" data-trigger>A wearable original chip that encapsulates the character's super powers. The AR filter is activated by attaching the chip to the holder and holding a smartphone over the built-in NFC tag.</p>
         </div>
       </div>
       <div class="col2">
@@ -303,58 +306,111 @@ include $path.'/libs/meta.php';
   </section>
 
 
+  <section class="product">
+    <div class="inner">
+      <div class="product__ttl">
+        <span class="c-sub-ttl" data-trigger>FEATURED TECH - PHYGICAL ITEM（T-Shirts）</span>
+        <div class="c-text-shuffle" id="shuffle05" data-trigger>
+          <h2 class="pc">
+            <span class="c-text-shuffle--element">Custom-designed T-shirt</span><br>
+            <span class="c-text-shuffle--element">materializes animation</span>
+          </h2>
+          <h2 class="sp">
+            <span class="c-text-shuffle--element">Custom-designed</span><br>
+            <span class="c-text-shuffle--element">T-shirt</span><br>
+            <span class="c-text-shuffle--element">materializes animation</span>
+          </h2>
+        </div>
+      </div>
+      <div class="product__image">
+        <img data-trigger src="../images/top/product_img_01.png" alt="">
+      </div>
+      <ul class="product__detail">
+        <li data-trigger>
+          <div class="product__detail__image" style="background: url(../images/top/asset_img_01.jpg)center center/cover no-repeat;">
+            
+          </div>
+          <div class="product__detail__text">
+            <span class="item">AR marker</span>
+            <p class="text">The woven pattern graphic printed on the front is an AR marker. AR effects are triggered by reading the graphic with a camera.</p>
+          </div>
+        </li>
+        <li data-trigger>
+          <div class="product__detail__image" style="background: url(../images/top/asset_img_01.jpg)center center/cover no-repeat;">
+            
+          </div>
+          <div class="product__detail__text">
+            <span class="item">Activation Tag</span>
+            <p class="text">By holding a smartphone over the hem activation tag, the user's wallet and database are consulted to authenticate the owner.</p>
+          </div>
+        </li>
+        <li data-trigger>
+          <div class="product__detail__image" style="background: url(../images/top/asset_img_01.jpg)center center/cover no-repeat;">
+            
+          </div>
+          <div class="product__detail__text">
+            <span class="item">Chip holder</span>
+            <p class="text">Holder parts attached to the cuff. A wearable original chip can be detached.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
   <section class="effect">
     <div class="inner">
       <div class="effect__text">
-        <span class="c-sub-ttl">( XRT TECHNOLOGY - AR EFFECT )</span>
-        <div class="c-text-shuffle" id="shuffle04">
+        <span class="c-sub-ttl" data-trigger>FEATURED TECH - AR EFFECT</span>
+        <div class="c-text-shuffle" id="shuffle04" data-trigger>
           <h2>
-            <span class="c-text-shuffle--element">The intersection of</span>
-            <span class="c-text-shuffle--element">Japanese culture</span>
-            <span class="c-text-shuffle--element">and technology</span>
+            <span class="c-text-shuffle--element">Wear extraordinary,</span><br>
+            <span class="c-text-shuffle--element">a marvel of an experience.</span>
           </h2>
         </div>
-        <p class="c-text01">オリジナルチップで起動したARフィルターで胸のARマーカーを読み込むことで、キャラクターから生まれたお面が具現化し、それぞれの特性にそったエフェクトを纏うことができる。</p>
+        <p class="c-text01" data-trigger>AR effects are seamlessly triggered by the simple actions of "holding up the chip" and "reading it with the camera. You can wear the supernatural powers of the character at any time.</p>
       </div>
-      <ul class="effect__list">
-        <li>
-          <div class="effect__list__wrap">
-            <div class="movie">
-              <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
+      <div class="effect__list-wrap" data-trigger>
+        <ul class="effect__list">
+          <li>
+            <div class="effect__list__wrap">
+              <div class="movie">
+                <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="../movie/ar_yujin_demo.mp4" type="video/mp4" data-v-62372636=""></video>
+              </div>
+              <div class="xrt">
+                <span class="xrt__logo"><img src="../images/common/logo_xrt_02.svg" alt=""></span>
+              </div>
             </div>
-            <div class="xrt">
-              <span class="xrt__logo"><img src="../images/common/logo_xrt_02.svg" alt=""></span>
+            <div class="grap"><img src="../images/common/grap_ryujin.svg" alt=""></div>
+            <span class="name">( NOH - RYUJIN )</span>
+          </li>
+          <li>
+            <div class="effect__list__wrap">
+              <div class="movie">
+                <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="../movie/ar_oni_demo.mp4" type="video/mp4" data-v-62372636=""></video>
+              </div>
+              <div class="xrt">
+                <span class="xrt__logo"><img src="../images/common/logo_xrt_02.svg" alt=""></span>
+              </div>
             </div>
-          </div>
-          <div class="grap"><img src="../images/common/grap_ryujin.svg" alt=""></div>
-          <span class="name">( NOH - RYUJIN )</span>
-        </li>
-        <li>
-          <div class="effect__list__wrap">
-            <div class="movie">
-              <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
+            <div class="grap grap02"><img src="../images/common/grap_onichan.svg" alt=""></div>
+            <span class="name">( NOH - ONI-CHAN )</span>
+          </li>
+          <li>
+            <div class="effect__list__wrap">
+              <div class="movie">
+                <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="../movie/ar_kocho_demo.mp4" type="video/mp4" data-v-62372636=""></video>
+              </div>
+              <div class="xrt">
+                <span class="xrt__logo"><img src="../images/common/logo_xrt_02.svg" alt=""></span>
+              </div>
             </div>
-            <div class="xrt">
-              <span class="xrt__logo"><img src="../images/common/logo_xrt_02.svg" alt=""></span>
-            </div>
-          </div>
-          <div class="grap grap02"><img src="../images/common/grap_onichan.svg" alt=""></div>
-          <span class="name">( NOH - ONI-CHAN )</span>
-        </li>
-        <li>
-          <div class="effect__list__wrap">
-            <div class="movie">
-              <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
-            </div>
-            <div class="xrt">
-              <span class="xrt__logo"><img src="../images/common/logo_xrt_02.svg" alt=""></span>
-            </div>
-          </div>
-          <div class="grap grap03"><img src="../images/common/grap_kocho.svg" alt=""></div>
-          <span class="name">( NOH - KOCHO )</span>
-        </li>
-      </ul>
-      <span class="message">A world where a healthy and prosperous life can be built through good connections.</span>
+            <div class="grap grap03"><img src="../images/common/grap_kocho.svg" alt=""></div>
+            <span class="name">( NOH - KOCHO )</span>
+          </li>
+        </ul>
+      </div>
+      <span class="message" data-trigger>Anime, Manga, Games,,,<br>Let's start a new play that expands our world, along with the <br class="pc">beloved culture that overflows in Japan.<br>XRT starts.</span>
     </div>
   </section>
 
@@ -365,23 +421,19 @@ include $path.'/libs/meta.php';
         <div class="img"><img src="../images/top/look_img_01.png" alt=""></div>
         <div class="img"><img src="../images/top/look_img_02.png" alt=""></div>
         <div class="img"><img src="../images/top/look_img_03.png" alt=""></div>
-        <div class="img"><img src="../images/top/look_img_04.png" alt=""></div> 
+        <div class="img"><img src="../images/top/look_img_04.png" alt=""></div>   
         <div class="img"><img src="../images/top/look_img_01.png" alt=""></div>
         <div class="img"><img src="../images/top/look_img_02.png" alt=""></div>
         <div class="img"><img src="../images/top/look_img_03.png" alt=""></div>
-        <div class="img"><img src="../images/top/look_img_04.png" alt=""></div> 
+        <div class="img"><img src="../images/top/look_img_04.png" alt=""></div>
         <div class="img"><img src="../images/top/look_img_01.png" alt=""></div>
         <div class="img"><img src="../images/top/look_img_02.png" alt=""></div>
         <div class="img"><img src="../images/top/look_img_03.png" alt=""></div>
-        <div class="img"><img src="../images/top/look_img_04.png" alt=""></div>        
+        <div class="img"><img src="../images/top/look_img_04.png" alt=""></div>
         <div class="img"><img src="../images/top/look_img_01.png" alt=""></div>
         <div class="img"><img src="../images/top/look_img_02.png" alt=""></div>
         <div class="img"><img src="../images/top/look_img_03.png" alt=""></div>
-        <div class="img"><img src="../images/top/look_img_04.png" alt=""></div>        
-        <div class="img"><img src="../images/top/look_img_01.png" alt=""></div>
-        <div class="img"><img src="../images/top/look_img_02.png" alt=""></div>
-        <div class="img"><img src="../images/top/look_img_03.png" alt=""></div>
-        <div class="img"><img src="../images/top/look_img_04.png" alt=""></div>        
+        <div class="img"><img src="../images/top/look_img_04.png" alt=""></div>    
       </div>
     </div>
   </section>
@@ -390,11 +442,11 @@ include $path.'/libs/meta.php';
   <section class="comingsoon">
     <div class="inner">
       <ul class="comingsoon__list">
-        <li>
-          <div></div>
+        <li data-trigger>
+          <div style="background: url(../images/top/asset_img_01.jpg)center center/cover no-repeat"></div>
         </li>
-        <li>
-          <div></div>
+        <li data-trigger>
+          <div style="background: url(../images/top/asset_img_01.jpg)center center/cover no-repeat"></div>
         </li>
       </ul>
     </div>

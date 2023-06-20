@@ -58,7 +58,7 @@ include $path.'/libs/meta.php';
           <svg xmlns="http://www.w3.org/2000/svg" width="278.083" height="246.169" viewBox="0 0 278.083 246.169"><path id="path03" data-name="path03" d="M804.917,3.415h-.5v245.17h41.171V141.077H1040.33V248.585h41.17V3.415h-41.17V107.278H845.588V3.415H804.917Z" transform="translate(-803.917 -2.916)" fill="none" stroke="#fcfaf2" stroke-width="1" opacity="0.25" style="visibility: visible; stroke-dashoffset: 0; stroke-dasharray: none;"></path></svg>
         </div>
         <div class="left">
-          <div class="c-text-shuffle" id="shuffle01">
+          <div class="c-text-shuffle" id="shuffle01" data-trigger>
             <h2>
               <span class="c-text-shuffle--element">Expand Japanese</span><br>
               <span class="c-text-shuffle--element">culture through XR</span><br>
@@ -72,7 +72,9 @@ include $path.'/libs/meta.php';
       </div>
       <div class="technology__img">
         <div class="img img01" data-trigger>
-          <img src="./images/top/technology_img_01.png" alt="">
+          <video autoplay="" muted="muted" playsinline="playsinline" loop="loop">
+            <source src="./movie/noh_ryujin.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="img img02" data-trigger>
           <img src="./images/top/technology_img_02.png" alt="">
@@ -95,7 +97,7 @@ include $path.'/libs/meta.php';
               <a href="">
                 <div class="image-wrap">
                   <div class="image">
-                    <div class="thumb"><img src="./images/top/alien.png" alt=""></div>
+                    <div class="thumb"><img src="./images/top/fashion_img_01.png" alt=""></div>
                     <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
                     <div class="tag">
                       <div class="tag-list">
@@ -119,9 +121,8 @@ include $path.'/libs/meta.php';
               <a href="">
                 <div class="image-wrap">
                   <div class="image">
-                    <div class="thumb"><img src="./images/top/alien.png" alt=""></div>
+                    <div class="thumb"><img src="./images/top/fashion_img_02.png" alt=""></div>
                     <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
-                    <!-- <div class="thumb"><img src="./images/top/fashion_img_02.png" alt=""></div> -->
                     <div class="tag">
                       <div class="tag-list">
                         <span>WORLD：分散型データベース</span>
@@ -144,9 +145,8 @@ include $path.'/libs/meta.php';
               <a href="">
                 <div class="image-wrap">
                   <div class="image">
-                    <div class="thumb"><img src="./images/top/alien.png" alt=""></div>
+                    <div class="thumb"><img src="./images/top/fashion_img_03.png" alt=""></div>
                     <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
-                    <!-- <div class="thumb"><img src="./images/top/fashion_img_03.png" alt=""></div> -->
                     <div class="tag">
                       <div class="tag-list">
                         <span>WORLD：ゲーム, メタバース</span>
@@ -182,22 +182,22 @@ include $path.'/libs/meta.php';
         <div class="asset__doll-slider swiper">
           <div class="swiper-wrapper">    
             <div class="asset__doll-slider__slide swiper-slide">
-              <img src="./images/top/asset_doll.png" alt="">
-              <!-- <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="https://community-lens.storage.googleapis.com/preview-media/final/e9f8ccc3-9bff-4952-b7f3-86afcfc0c139.mp4" type="video/mp4"></video> -->
+              <!-- <img src="./images/top/asset_doll.png" alt=""> -->
+              <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="./movie/230619_xrt_asset_ryujin_v10_alpha_compressed.mp4" type="video/mp4"></video>
             </div>
             <div class="asset__doll-slider__slide swiper-slide">
-              <img src="./images/top/asset_doll.png" alt="">
-              <!-- <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="https://community-lens.storage.googleapis.com/preview-media/final/bc0b59cb-0296-419a-acb7-7c8ec89aac0e.mp4" type="video/mp4"></video> -->
+              <!-- <img src="./images/top/asset_doll.png" alt=""> -->
+              <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="./movie/230619_xrt_asset_onichan_v10_alpha_compressed.mp4" type="video/mp4"></video>
             </div>
             <div class="asset__doll-slider__slide swiper-slide">
-              <img src="./images/top/asset_doll.png" alt="">
-              <!-- <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video> -->
+              <!-- <img src="./images/top/asset_doll.png" alt=""> -->
+              <video muted autoplay playsinline loop preload="metadata" class="content-media-video"><source src="./movie/230619_xrt_asset_cocho_v10_alpha_compressed.mp4" type="video/mp4" data-v-62372636=""></video>
             </div>
           </div>
         </div>
         <div class="left">
-          <span class="c-sub-ttl">FEATURED TECH - PHYGITAL ITEM（NFT）</span>
-          <div class="c-text-shuffle" id="shuffle02">
+          <span class="c-sub-ttl" data-trigger>FEATURED TECH - PHYGITAL ITEM（NFT）</span>
+          <div class="c-text-shuffle" id="shuffle02" data-trigger>
             <h2>
               <span class="c-text-shuffle--element">Blockchain verifies</span>
               <span class="c-text-shuffle--element">ownership,</span><br>
@@ -215,11 +215,11 @@ include $path.'/libs/meta.php';
                 <span class="progress-bar"></span>
               </div>
               <div class="asset__thumb-slider__slide swiper-slide">
-                <img src="./images/top/asset_img_01.jpg" alt="">
+                <img src="./images/top/asset_img_02.jpg" alt="">
                 <span class="progress-bar"></span>
               </div>
               <div class="asset__thumb-slider__slide swiper-slide">
-                <img src="./images/top/asset_img_01.jpg" alt="">
+                <img src="./images/top/asset_img_03.jpg" alt="">
                 <span class="progress-bar"></span>
               </div>
             </div>
@@ -235,8 +235,8 @@ include $path.'/libs/meta.php';
       <div class="cont-01">
         <div class="img"><img src="./images/top/chip_bg.png" alt=""></div>
         <div class="text">
-          <span class="c-sub-ttl">FEATURED TECH - CHIP（NFC）</span>
-          <div class="c-text-shuffle" id="shuffle03">
+          <span class="c-sub-ttl" data-trigger>FEATURED TECH - CHIP（NFC）</span>
+          <div class="c-text-shuffle" id="shuffle03" data-trigger>
             <h2>
               <span class="c-text-shuffle--element">Infuse animation</span><br>
               <span class="c-text-shuffle--element">with a wearable chip.</span>
@@ -307,8 +307,8 @@ include $path.'/libs/meta.php';
   <section class="product">
     <div class="inner">
       <div class="product__ttl">
-        <span class="c-sub-ttl">FEATURED TECH - PHYGICAL ITEM（T-Shirts）</span>
-        <div class="c-text-shuffle" id="shuffle05">
+        <span class="c-sub-ttl" data-trigger>FEATURED TECH - PHYGICAL ITEM（T-Shirts）</span>
+        <div class="c-text-shuffle" id="shuffle05" data-trigger>
           <h2 class="pc">
             <span class="c-text-shuffle--element">Custom-designed T-shirt</span><br>
             <span class="c-text-shuffle--element">materializes animation</span>
@@ -325,7 +325,7 @@ include $path.'/libs/meta.php';
       </div>
       <ul class="product__detail">
         <li data-trigger>
-          <div class="product__detail__image">
+          <div class="product__detail__image" style="background: url(./images/top/asset_img_01.jpg)center center/cover no-repeat;">
             
           </div>
           <div class="product__detail__text">
@@ -334,7 +334,7 @@ include $path.'/libs/meta.php';
           </div>
         </li>
         <li data-trigger>
-          <div class="product__detail__image">
+          <div class="product__detail__image" style="background: url(./images/top/asset_img_01.jpg)center center/cover no-repeat;">
             
           </div>
           <div class="product__detail__text">
@@ -343,7 +343,7 @@ include $path.'/libs/meta.php';
           </div>
         </li>
         <li data-trigger>
-          <div class="product__detail__image">
+          <div class="product__detail__image" style="background: url(./images/top/asset_img_01.jpg)center center/cover no-repeat;">
             
           </div>
           <div class="product__detail__text">
@@ -359,8 +359,8 @@ include $path.'/libs/meta.php';
   <section class="effect">
     <div class="inner">
       <div class="effect__text">
-        <span class="c-sub-ttl">FEATURED TECH - AR EFFECT</span>
-        <div class="c-text-shuffle" id="shuffle04">
+        <span class="c-sub-ttl" data-trigger>FEATURED TECH - AR EFFECT</span>
+        <div class="c-text-shuffle" id="shuffle04" data-trigger>
           <h2>
             <span class="c-text-shuffle--element">Wear extraordinary,</span><br>
             <span class="c-text-shuffle--element">a marvel of an experience.</span>
@@ -373,7 +373,7 @@ include $path.'/libs/meta.php';
           <li>
             <div class="effect__list__wrap">
               <div class="movie">
-                <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
+                <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="./movie/ar_yujin_demo.mp4" type="video/mp4" data-v-62372636=""></video>
               </div>
               <div class="xrt">
                 <span class="xrt__logo"><img src="./images/common/logo_xrt_02.svg" alt=""></span>
@@ -385,7 +385,7 @@ include $path.'/libs/meta.php';
           <li>
             <div class="effect__list__wrap">
               <div class="movie">
-                <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
+                <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="./movie/ar_oni_demo.mp4" type="video/mp4" data-v-62372636=""></video>
               </div>
               <div class="xrt">
                 <span class="xrt__logo"><img src="./images/common/logo_xrt_02.svg" alt=""></span>
@@ -397,7 +397,7 @@ include $path.'/libs/meta.php';
           <li>
             <div class="effect__list__wrap">
               <div class="movie">
-                <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="https://community-lens.storage.googleapis.com/preview-media/final/765af446-87e4-4da1-99f2-29d07f48c5f9.mp4" type="video/mp4" data-v-62372636=""></video>
+                <video muted="muted" playsinline="" preload="metadata" loop="" class="video" data-v-62372636=""><source src="./movie/ar_kocho_demo.mp4" type="video/mp4" data-v-62372636=""></video>
               </div>
               <div class="xrt">
                 <span class="xrt__logo"><img src="./images/common/logo_xrt_02.svg" alt=""></span>
@@ -441,10 +441,10 @@ include $path.'/libs/meta.php';
     <div class="inner">
       <ul class="comingsoon__list">
         <li data-trigger>
-          <div></div>
+          <div style="background: url(./images/top/asset_img_01.jpg)center center/cover no-repeat;"></div>
         </li>
         <li data-trigger>
-          <div></div>
+          <div style="background: url(./images/top/asset_img_01.jpg)center center/cover no-repeat;"></div>
         </li>
       </ul>
     </div>

@@ -1,5 +1,7 @@
 .chip {
   padding: 135px 0 80px;
+  position: relative;
+  z-index: +1;
   @include SP {
     padding: 34px 0 40px;
   }

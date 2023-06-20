@@ -1,6 +1,7 @@
 .asset {
   padding: 32px 0 355px;
   overflow: hidden;
+  position: relative;
   @include max-screen(1360px){
     padding-bottom: 26vw;
   }
@@ -21,6 +22,8 @@
     white-space: nowrap;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: +2;
     .scroll-wrap {
       display: flex;
       align-items: center;
@@ -42,10 +45,10 @@
   }
   &__doll-slider {
     position: absolute;
-    width: 300px;
+    width: 700px;
     z-index: -1;
     left: 50%;
-    top: calc(50% - 5px);
+    top: calc(50% + 10px);
     // top: calc(50% - 40px);
     transform: translate(-50%,-50%);
     @include SP {

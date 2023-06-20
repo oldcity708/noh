@@ -106,8 +106,21 @@
 
     .img01 {
       width: 38.8889%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
       @include SP {
         width: 100%;
+        border-radius: 16px;
+      }
+      video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        // max-width: 100%;
+        width: auto;
+        max-height: 100%;
       }
     }
 

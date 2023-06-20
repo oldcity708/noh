@@ -10,7 +10,7 @@ let ri = 0; // realindexを保持
 const thumb_progress = function(i) {
   const this_slider_bar = $('.progress-bar').eq(i);
   gsap.to(this_slider_bar, {
-    duration: 3, //秒数
+    duration: 11, //秒数
     width: "100%"
   })
 }
@@ -21,7 +21,7 @@ const thumbSwiper = new Swiper('.asset__thumb-slider', {
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
   autoplay: {
-    delay: 3000,
+    delay: 11000,
   }
 });
 
@@ -41,7 +41,7 @@ new Swiper('.asset__doll-slider', {
     swiper: thumbSwiper
   },
   autoplay: {
-    delay: 3000,
+    delay: 11000,
     disableOnInteraction: false,
   },
   on : {

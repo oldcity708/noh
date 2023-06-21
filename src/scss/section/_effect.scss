@@ -78,11 +78,11 @@
       padding-top: 50%;
       border: solid 4px rgba(252, 250, 242, 0.3);
       border-radius: 24px;
-      background: url(../images/top/effect_img_01.png) 50%/ cover border-box
-        /* background-origin */
-        padding-box
-        /* background-clip */
-      ;
+      // background: url(../images/top/effect_img_01.png) 50%/ cover border-box
+      //   /* background-origin */
+      //   padding-box
+      //   /* background-clip */
+      // ;
       @include SP {
         border-radius: 16px;
       }

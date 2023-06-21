@@ -1,13 +1,17 @@
 .mv {
-  padding-top: 60.9375%;
   position: relative;
-  background: url(../images/top/mv.png)center center/cover no-repeat;
+  background: url(../images/top/mv.jpg)center center/cover no-repeat;
   max-width: 1680px;
   margin: 0 auto;
+  height: 1024px;
+  @include max-screen(1680px){
+    height: auto;
+    padding-top: 60.95238095%;
+  }
   @include SP {
     // padding-top: 100%;
     padding-top: 120.53333333%;
-    background: url(../images/top/mv_sp.png)center center/cover no-repeat;
+    background: url(../images/top/mv_sp.jpg)center center/cover no-repeat;
   }
   .inner {
     position: absolute;
@@ -18,9 +22,12 @@
     display: flex;
     align-items: flex-end;
     // padding-bottom: 134px;
-    padding-bottom: 10.46875vw;
+    padding-bottom: 176px;
     // max-width: 1680px;
     max-width: 100%;
+    @include max-screen(1680px){
+      padding-bottom: 10.46875vw;
+    }
     @include SP {
       padding-bottom: 40px;
     }
@@ -29,12 +36,15 @@
     position: absolute;
     // width: calcvw(782);
     // width: calcvw(281);
-    width: 28.125vw;
+    width: 472.5px;
     // top: 50%;
     // top: 23.07692308%;
     top: 15.5%;
     left: 50%;
     transform: translate(-50%,0%);
+    @include max-screen(1680px){
+      width: 28.125vw;
+    }
     @include SP {
       // top: 34%;
       top: 24%;
@@ -56,7 +66,8 @@
   }
   &__scroll {
     // @include font-size(12);
-    font-size: 0.9375vw;
+    // font-size: 0.9375vw;
+    @include font-size(15);
     font-weight: 400;
     letter-spacing: .05em;
     font-family: $proxima;
@@ -66,6 +77,9 @@
     bottom: 10.46875vw;
     left: 50%;
     transform: translate(-50%,0);
+    @include max-screen(1680px){
+      font-size: 0.9375vw;
+    }
     @include SP {
       @include font-size(10);
       bottom: 40px;
@@ -73,13 +87,18 @@
   }
   &__left {
     // @include font-size(12);
-    font-size: 0.9375vw;
+    // font-size: 0.9375vw;
+    @include font-size(15);
     letter-spacing: .05em;
     font-weight: 400;
     color:#FCFAF2;
     @include PC {
       position: absolute;
       left: 40px;
+      bottom: 180px;
+    }
+    @include max-screen(1680px){
+      font-size: 0.9375vw;
       bottom: 10.46875vw; 
     }
     @include SP {

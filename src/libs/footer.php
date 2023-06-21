@@ -29,7 +29,10 @@
                     <small class="sub-ttl">Info</small>
                     <ul class="link-list">
                         <li>
-                            <a href="">Pressrelease</a>
+                            <a href="https://hksk.io/" target="_blank">Company</a>
+                        </li>
+                        <li>
+                            <a href="https://prtimes.jp/main/html/rd/p/000000002.000116968.html" target="_blank">Pressrelease</a>
                         </li>
                         <li class="disable">
                             <a href="">Marketplace</a>

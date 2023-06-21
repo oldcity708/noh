@@ -34,13 +34,13 @@ include $path.'/libs/meta.php';
     <div class="inner">
       <div class="movie__movie">
         <video autoplay="" muted="muted" playsinline="playsinline" loop="loop">
-          <source src="https://livestreaming.ricoh/videos/movie02.mp4" type="video/mp4">
+          <source src="../movie/movie_tmb.mp4" type="video/mp4">
         </video>
       </div>
     </div>
     <div class="movie__modal">
       <div class="movie__modal__youtube">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3VAhPvzs8BY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+        <div id="player"></div>
       </div>
       <button class="close">
         <img src="../images/common/btn_close.png" alt="">
@@ -67,7 +67,7 @@ include $path.'/libs/meta.php';
           </div>
         </div>
         <div class="right">
-          <p class="c-text01" data-trigger>"This is a fashion project that allows the wearer to possess the psychic powers of three characters ""RYUJIN"", ""ONI-CHAN"", and ""KOCHO"", who possess the spirit of ""Noh"", a traditional Japanese performing art.<br>The project is built on the ""XRT"" technology, a new standard for fashion that extends the world view through ""XR communication"". <br>Digital items and physical items can be authenticated with each other to create a next-generation identity."</p>  
+          <p class="c-text01" data-trigger>"This is a fashion project that allows the wearer to possess the psychic powers of three characters "RYUJIN", "ONI-CHAN", and "KOCHO", who possess the spirit of "Noh", a traditional Japanese performing art.<br>The project is built on the "XRT" technology, a new standard for fashion that extends the world view through "XR communication". <br>Digital items and physical items can be authenticated with each other to create a next-generation identity."</p>  
         </div>
       </div>
       <div class="technology__img">
@@ -94,11 +94,11 @@ include $path.'/libs/meta.php';
         <div class="fashion__list-wrap" data-trigger>
           <ul class="fashion__list">
             <li>
-              <a href="">
+              <a>
                 <div class="image-wrap">
                   <div class="image">
                     <div class="thumb"><img src="../images/top/fashion_img_01.png" alt=""></div>
-                    <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
+                    <!-- <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video> -->
                     <div class="tag">
                       <div class="tag-list">
                         <span>WORLD：Real</span>
@@ -118,12 +118,11 @@ include $path.'/libs/meta.php';
               </a>
             </li>
             <li class="current-slide">
-              <a href="">
+              <a>
                 <div class="image-wrap">
                   <div class="image">
                     <div class="thumb"><img src="../images/top/fashion_img_02.png" alt=""></div>
-                    <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
-                    <!-- <div class="thumb"><img src="../images/top/fashion_img_02.png" alt=""></div> -->
+                    <!-- <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video> -->
                     <div class="tag">
                       <div class="tag-list">
                         <span>WORLD：Distributed database</span>
@@ -143,12 +142,11 @@ include $path.'/libs/meta.php';
               </a>
             </li>
             <li>
-              <a href="">
+              <a>
                 <div class="image-wrap">
                   <div class="image">
                     <div class="thumb"><img src="../images/top/fashion_img_03.png" alt=""></div>
-                    <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video>
-                    <!-- <div class="thumb"><img src="../images/top/fashion_img_03.png" alt=""></div> -->
+                    <!-- <video playsinline muted loop><source type="video/mp4" crossorigin="use-credentials" src="https://cdn.rtfkt.com/assets/videos/vial/alien.mp4"></video> -->
                     <div class="tag">
                       <div class="tag-list">
                         <span>WORLD：Game,Metaverse</span>
@@ -327,8 +325,8 @@ include $path.'/libs/meta.php';
       </div>
       <ul class="product__detail">
         <li data-trigger>
-          <div class="product__detail__image" style="background: url(../images/top/asset_img_01.jpg)center center/cover no-repeat;">
-            
+          <div class="product__detail__image">
+            <img src="../images/top/product_detail_01.png" alt="">
           </div>
           <div class="product__detail__text">
             <span class="item">AR marker</span>
@@ -336,8 +334,8 @@ include $path.'/libs/meta.php';
           </div>
         </li>
         <li data-trigger>
-          <div class="product__detail__image" style="background: url(../images/top/asset_img_01.jpg)center center/cover no-repeat;">
-            
+          <div class="product__detail__image">
+            <img src="../images/top/product_detail_02.png" alt="">
           </div>
           <div class="product__detail__text">
             <span class="item">Activation Tag</span>
@@ -345,8 +343,8 @@ include $path.'/libs/meta.php';
           </div>
         </li>
         <li data-trigger>
-          <div class="product__detail__image" style="background: url(../images/top/asset_img_01.jpg)center center/cover no-repeat;">
-            
+          <div class="product__detail__image">
+            <img src="../images/top/product_detail_03.png" alt="">
           </div>
           <div class="product__detail__text">
             <span class="item">Chip holder</span>
@@ -443,10 +441,14 @@ include $path.'/libs/meta.php';
     <div class="inner">
       <ul class="comingsoon__list">
         <li data-trigger>
-          <div style="background: url(../images/top/asset_img_01.jpg)center center/cover no-repeat"></div>
+          <div>
+            <img src="../images/top/comingsoon_img_01.png" alt="">
+          </div>
         </li>
         <li data-trigger>
-          <div style="background: url(../images/top/asset_img_01.jpg)center center/cover no-repeat"></div>
+          <div>
+            <img src="../images/top/comingsoon_img_02.png" alt="">
+          </div>
         </li>
       </ul>
     </div>
@@ -470,5 +472,29 @@ include $path.'/libs/meta.php';
 <!-- Scripts
 ======================================================================-->
 <?php include $path.'/libs/scripts.php'; ?>
+<script>
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  var player;
+  var vid = '97xOlTUBIPw';
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player',{
+      width: '100%',
+		  height: '100%',
+      videoId: vid,
+      playerVars: {
+          'rel'      : 0,
+          'showinfo' : 0,
+          'fs': 0,
+          'playsinline': 1,
+      },
+    });
+  }
+  $('.close').on('click',function(){
+    player.pauseVideo();
+  });
+</script>
 </body>
 </html>

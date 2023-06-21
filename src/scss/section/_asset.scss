@@ -1,9 +1,9 @@
 .asset {
-  padding: 32px 0 355px;
+  padding: 32px 0 300px;
   overflow: hidden;
   position: relative;
   @include max-screen(1360px){
-    padding-bottom: 26vw;
+    padding-bottom: 21vw;
   }
   @include SP {
     padding: 32px 0 68px;
@@ -52,6 +52,7 @@
     // top: calc(50% - 40px);
     transform: translate(-50%,-50%);
     @include SP {
+      width: 100%;
       z-index: +1;
       transform: translate(0%, 0);
       position: static;
@@ -86,6 +87,9 @@
       margin-right: 16px;
       position: relative;
       cursor: pointer;
+      @include PC {
+        height: 100px; 
+      }
       &:last-of-type {
         margin-right: 0;
       }

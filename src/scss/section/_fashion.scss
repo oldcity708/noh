@@ -36,17 +36,22 @@
     }
 
     h2 {
-      width: 49.4845%;
+      // width: 49.4845%;
+      width: 33.62745098%;
       @include SP {
         // width: 100%;
         // width: 80%;
         width: 59.59302326%;
         margin-bottom: 24px;
       }
+      img {
+        width: 100%;
+      }
     }
 
     .c-text01 {
       width: 43.299%;
+      max-width: 420px;
       @include SP {
         width: 100%;
         text-align: justify;

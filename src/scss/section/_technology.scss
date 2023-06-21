@@ -73,7 +73,7 @@
     }
 
     .left {
-      max-width: 480px;
+      // max-width: 480px;
       width: 44.4444%;
       text-align: right;
       position: relative;
@@ -112,6 +112,7 @@
       @include SP {
         width: 100%;
         border-radius: 16px;
+        padding-top: 100%;
       }
       video {
         position: absolute;

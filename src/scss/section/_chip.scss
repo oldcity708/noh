@@ -39,15 +39,20 @@
 
     .img {
       // width: 50%;
-      width: 33.33333333%;
+      // width: 33.33333333%;
+      width: 30%;
       position: absolute;
       bottom: 0;
       // right: 120px;
-      right: 11.11111111%;
+      // right: 11.11111111%;
+      right: 10%;
       @include SP {
         // width: 100%;
         // width: 90%;
+        right: auto;
+        left: 50%;
         width: 60%;
+        transform: translate(-50%,0);
       }
     }
 
@@ -133,38 +138,41 @@
           animation-name: scrollEn;
 
           .img {
-            width: 43.96551724vw;
-            max-width: 510px;
+            // width: 43.96551724vw;
+            width: 61.40625vw;
+            max-width: 786px;
             // margin-left: -10px;
-            margin-right: 14px;
+            // margin-right: 14px;
             @include SP {
-              width: 267.5px;
-              margin-left: -5px;
+              width: 393px;
+              // margin-left: -5px;
             }
           }
         }
 
         &.row03 {
           .img {
-            width: 52.241379vw;
-            max-width: 606px;
+            // width: 52.241379vw;
+            width: 49.21875vw;
+            max-width: 630px;
             // margin-left: -10px;
-            margin-right: 24px;
+            // margin-right: 24px;
             @include SP {
-              width: 319.5px;
-              margin-left: -5px;
+              width: 315px;
+              // margin-left: -5px;
             }
           }
         }
 
         .img {
-          width: 53.53448276vw;
-          max-width: 621px;
-          margin-right: 21px;
+          // width: 53.53448276vw;
+          width: 50.15625vw;
+          max-width: 642px;
+          // margin-right: 21px;
           // margin-left: -10px;
           @include SP {
-            width: 326px;
-            margin-left: -5px;
+            width: 321px;
+            // margin-left: -5px;
           }
         }
       }

@@ -5,6 +5,13 @@
   left: 0;
   width: 100%;
   z-index: +99;
+  transition: .3s;
+  opacity: 0;
+  visibility: hidden;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
   @include SP {
     padding: 12px 0;
   }
@@ -21,6 +28,10 @@
   &__logo {
     display: block;
     width: 68px;
+    @include PC {
+      position: relative;
+      top: 15px;
+    }
     @include SP {
       width: 56px;
     }

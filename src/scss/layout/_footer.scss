@@ -93,4 +93,15 @@
       color: #8E909A;
     }
   }
+  &.en {
+    .cont {
+      .left {
+        p {
+          font-family: $proxima;
+          @include font-size(12);
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+  }
 }

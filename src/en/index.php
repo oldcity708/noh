@@ -23,7 +23,7 @@ include $path.'/libs/meta.php';
         <img src="../images/top/mv_catch.svg" alt="">   
       </div>
       <span class="mv__scroll">SCROLL</span>
-      <span class="mv__left">（能）</span>
+      <!-- <span class="mv__left">（能）</span> -->
     </div>
   </div>
 
@@ -36,9 +36,13 @@ include $path.'/libs/meta.php';
         <video autoplay="" muted="muted" playsinline="playsinline" loop="loop">
           <source src="../movie/movie_tmb.mp4" type="video/mp4">
         </video>
+        <div class="movie__movie__play sp">
+          <img src="../images/common/btn_play_sp.svg" alt="">
+        </div>
       </div>
     </div>
     <div class="movie__modal">
+      <div class="movie__modal__bg"></div>
       <div class="movie__modal__youtube">
         <div id="player"></div>
       </div>
@@ -466,7 +470,7 @@ include $path.'/libs/meta.php';
 
 <!-- Footer
 ======================================================================-->
-<?php include $path.'/libs/footer.php'; ?>
+<?php include $path.'/libs/footer_en.php'; ?>
 
 
 <!-- Scripts
@@ -492,7 +496,13 @@ include $path.'/libs/meta.php';
       },
     });
   }
+  $('.movie__movie').on('click',function(){
+    player.playVideo();
+  });
   $('.close').on('click',function(){
+    player.pauseVideo();
+  });
+  $('.movie__modal__bg').on('click',function(){
     player.pauseVideo();
   });
 </script>

@@ -36,6 +36,7 @@
     transform: translate(-50%,-50%);
     @include SP {
       width: 80%;
+      max-width: 400px;
       position: static;
       transform: translate(0,0);
       margin: 60px auto;
@@ -46,6 +47,7 @@
     @include SP {
       width: 79.30029155%;
       margin: 0 auto;
+      max-width: 500px;
     }
     li {
       width: 240px;
@@ -53,6 +55,7 @@
       @include SP {
         width: 100%;
         margin-bottom: 40px;
+        text-align: center;
       }
       &:nth-of-type(2){
         @include PC {
@@ -67,9 +70,17 @@
       // border: 1px solid #4D4F5A;
       // padding-top: 100%;
       margin-bottom: 24px;
+      text-align: center;
+      border: 1px solid #4D4F5A;
+      border-radius: 24px;
+      @include SP {
+        display: inline-block;
+      }
     }
     &__text {
-
+      @include SP {
+        text-align: left;
+      }
     }
     .item {
       @include font-size(14);

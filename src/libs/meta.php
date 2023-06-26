@@ -14,7 +14,7 @@
     // タブレット用の固定Viewport設定
     // タブレットで閲覧した際は、$widthに設定したwidthで表示される
     if ($ua->set() === 'tablet') :
-        $width = '1280px';
+        $width = '1360px';
 ?>
 
 <meta content="width=<?php echo $width; ?>,initial-scale=1.0,maximum-scale=1.0" name="viewport">

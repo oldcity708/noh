@@ -1,44 +1,44 @@
 .c-text-shuffle {
-  &#shuffle01 {
-    @include PC {
-      height: 148px;
-    }
-    @include SP {
-      height: 125px;
-    }
-  }
-  &#shuffle02 {
-    @include PC {
-      height: 198px;
-    }
-    @include SP {
-      height: 167px;
-    }
-  }
-  &#shuffle03 {
-    @include PC {
-      height: 99px;
-    }
-    @include SP {
-      height: 125px;
-    }
-  }
-  &#shuffle04 {
-    @include PC {
-      height: 99px;
-    }
-    @include SP {
-      height: 125px;
-    }
-  }
-  &#shuffle05 {
-    @include PC {
-      // height: 99px;
-    }
-    @include SP {
-      height: 166px;
-    }
-  }
+  // &#shuffle01 {
+  //   @include PC {
+  //     height: 148px;
+  //   }
+  //   @include SP {
+  //     height: 125px;
+  //   }
+  // }
+  // &#shuffle02 {
+  //   @include PC {
+  //     height: 198px;
+  //   }
+  //   @include SP {
+  //     height: 167px;
+  //   }
+  // }
+  // &#shuffle03 {
+  //   @include PC {
+  //     height: 99px;
+  //   }
+  //   @include SP {
+  //     height: 125px;
+  //   }
+  // }
+  // &#shuffle04 {
+  //   @include PC {
+  //     height: 99px;
+  //   }
+  //   @include SP {
+  //     height: 125px;
+  //   }
+  // }
+  // &#shuffle05 {
+  //   @include PC {
+  //     // height: 99px;
+  //   }
+  //   @include SP {
+  //     height: 166px;
+  //   }
+  // }
   &--element {
     font-family: $proxima;
     @include font-size(38);

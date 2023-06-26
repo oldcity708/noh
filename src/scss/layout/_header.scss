@@ -5,12 +5,18 @@
   left: 0;
   width: 100%;
   z-index: +99;
-  transition: .3s;
+  transition: .6s;
   opacity: 0;
-  visibility: hidden;
-  &.active {
+  transform: translate(0,30px);
+  &.fadeUp {
     opacity: 1;
-    visibility: visible;
+    transform: translate(0,0px);
+  }
+  &.active {
+    .header__logo {
+      opacity: 1;
+      visibility: visible;
+    }
   }
   @include SP {
     padding: 12px 0;
@@ -28,6 +34,9 @@
   &__logo {
     display: block;
     width: 68px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
     @include PC {
       position: relative;
       top: 15px;

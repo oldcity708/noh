@@ -28,13 +28,13 @@ $proxima: "proxima-nova", sans-serif;
  * !!! ブレークポイント !!!
  */
 @mixin PC {
-  @include min-screen(768px) {
+  @include min-screen(1025px) {
     @content;
   }
 }
 
 @mixin SP {
-  @include max-screen(767px) {
+  @include max-screen(1024px) {
     @content;
   }
 }
@@ -191,6 +191,9 @@ select::-ms-expand {
   padding: 0 40px;
   margin: 0 auto;
   @include SP {
+    padding: 0 48px;
+  }
+  @include max-screen(768px){
     padding: 0 16px;
   }
 }
@@ -210,7 +213,8 @@ select::-ms-expand {
 }
 
 body {
-  background: #090709;
+  // background: #090709;
+  background: #000;
   color: #FCFAF2;
   &.fixed {
     overflow: hidden;
@@ -218,6 +222,19 @@ body {
 }
 
 main {
+  opacity: 0;
+  transform: translate(0,30px);
+  // // padding-top: 50px;
+  // position: relative;
+  // // bottom: -50px;
+  transition: .6s;
+  // overflow: hidden;
+  &.active {
+    opacity: 1;
+    // bottom: 0;
+    // padding-top: 0;
+    transform: translate(0,0px);
+  }
   @include SP {
     overflow: hidden;
   }

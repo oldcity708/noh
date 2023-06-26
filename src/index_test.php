@@ -13,9 +13,6 @@ include $path.'/libs/meta.php';
 ======================================================================-->
 <?php include $path.'/libs/header.php'; ?>
 
-
-<!-- Loading
-======================================================================-->
 <div class="loading">
   <div class="loading__logo">
     <div class="loading__logo__logo">

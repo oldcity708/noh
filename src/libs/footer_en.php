@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer en">
     <div class="inner">
         <div class="cont">
             <div class="left">
@@ -7,7 +7,7 @@
                     <img src="<?php echo APP_URL; ?>images/common/logo_hksk.svg" alt="HKSK Studios">
                 </a>
                 <small class="sub-ttl">Contact</small>
-                <p>コラボレーションや取材のお問い合わせは下記メールアドレスからご連絡ください。</p>
+                <p>For collaboration and interview inquiries, please contact us at the e-mail address below.</p>
                 <a href="mailto:contact@hksk.io" class="contact">contact@hksk.io</a>
             </div>
             <div class="right">

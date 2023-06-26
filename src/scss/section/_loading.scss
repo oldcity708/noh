@@ -1,0 +1,76 @@
+.loading {
+  width: 100vw;
+  // height: 100vh;
+  padding-top: 60.95238095%;
+  // background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 104;
+  @include SP {
+    padding-top: 120.53333333%;
+  }
+  &__logo {
+    position: absolute;
+    width: 347px;
+    // top: 12.6vw;
+    top: 211.68px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    @include max-screen(1680px){
+      width: 20.703125vw;
+      top: 12.6vw;
+    }
+    @include max-screen(768px) {
+      top: 29%;
+      width: 37vw;
+    }
+    &__logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      // opacity: 0;
+      // transition: 1.4s;
+      // &.show {
+      //   opacity: 1;
+      // }
+      // img {
+      //   width: 100%;
+      // }
+      svg {
+        width: 48.67924528%;
+        height: auto;
+      }
+    }
+    &__noh {
+      width: 300.5625px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      margin-top: 26px;
+      @include max-screen(1680px){
+        width: 17.890625vw;
+        // margin-top: 1.40625vw;
+        margin-top: 1.5vw;
+      }
+      @include max-screen(768px) {
+        width: 32vw;
+        margin-top: 4.3vw;
+      }
+      svg {
+        &:nth-of-type(1){
+          width: 27.88209607%;
+          height: auto;
+        }
+        &:nth-of-type(2){
+          width: 30.32751092%;
+          height: auto;
+        }
+        &:nth-of-type(3){
+          width: 26.88646288%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

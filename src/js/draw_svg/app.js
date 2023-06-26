@@ -53,3 +53,51 @@ gsap.matchMedia().add("(max-width: 767px)", () => {
     ease:"power1.inOut"
   });
 });
+
+
+
+
+
+gsap.set("#load01,#load02,#load03", {
+  drawSVG : '0%',
+  visibility:"visible"
+});
+
+gsap.to("#load01,#load02,#load03", {
+  scrollTrigger: {
+    trigger: '.loading',
+    start: 'top bottom',
+  },
+  drawSVG : '100%',
+  duration: 1.4,
+  ease:"power1.inOut",
+});
+
+
+gsap.set("#loadleft,#loadright", {
+  drawSVG : '0%',
+  visibility:"visible"
+});
+
+gsap.to("#loadleft,#loadright", {
+  scrollTrigger: {
+    trigger: '.loading',
+    start: 'top bottom',
+  },
+  drawSVG : '100%',
+  duration: 1.4,
+  ease:"power1.inOut",
+});
+
+
+$(function(){
+  setTimeout(function(){
+    $('.loading').fadeOut(300);
+    $('main').addClass('active');
+    // $(window).scrollTop(30);
+    // $('.mv').addClass('active');
+    $('.header').addClass('fadeUp');
+    $('body').removeClass('fixed');
+    // $(window).scrollTop(30);
+  },1800);
+});

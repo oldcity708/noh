@@ -53,6 +53,7 @@
     transform: translate(-50%,-50%);
     @include SP {
       width: 100%;
+      max-width: 600px;
       z-index: +1;
       transform: translate(0%, 0);
       position: static;
@@ -77,9 +78,11 @@
       margin-top: 0px;
       order: 1;
       width: 79.30029155%;
+      max-width: 400px;
     }
     .swiper-wrapper {
-      
+      height: auto;
+      // align-items: flex-start;
     }
     &__slide {
       max-width: 100px;
@@ -88,7 +91,8 @@
       position: relative;
       cursor: pointer;
       @include PC {
-        height: 100px; 
+        // max-height: 100px;
+        // height: 100%;
       }
       &:last-of-type {
         margin-right: 0;
@@ -96,6 +100,9 @@
       @include SP {
         width: calc((100% - 32px) / 3);
         max-width: 100%;
+      }
+      img {
+        width: 100%;
       }
       .progress-bar {
         position: absolute;
@@ -142,7 +149,7 @@
           width: 100%;
           text-align: left;
           order: 1;
-          margin-bottom: 48px;
+          // margin-bottom: 48px;
           padding: 0 8px;
         }
 
@@ -163,6 +170,7 @@
           display: flex;
           flex-direction: column;
           order: 3;
+          padding-top: 0;
         }
         .c-text01 {
           @include SP {

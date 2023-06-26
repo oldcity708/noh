@@ -8,3 +8,8 @@ $('.close').on('click',function(){
   $('.movie__modal').removeClass('active');
   $('body').removeClass('fixed');
 });
+
+$('.movie__modal__bg').on('click',function(){
+  $('.movie__modal').removeClass('active');
+  $('body').removeClass('fixed');
+});

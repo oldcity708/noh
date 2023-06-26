@@ -4,11 +4,18 @@
   max-width: 1680px;
   margin: 0 auto;
   height: 1024px;
+  transition: .6s;
+  // opacity: 0;
+  // transform: translate(0,30px);
+  // &.active {
+  //   opacity: 1;
+  //   transform: translate(0,0px);
+  // }
   @include max-screen(1680px){
     height: auto;
     padding-top: 60.95238095%;
   }
-  @include SP {
+  @include max-screen(768px) {
     // padding-top: 100%;
     padding-top: 120.53333333%;
     background: url(../images/top/mv_sp.jpg)center center/cover no-repeat;
@@ -28,7 +35,7 @@
     @include max-screen(1680px){
       padding-bottom: 10.46875vw;
     }
-    @include SP {
+    @include max-screen(768px) {
       padding-bottom: 40px;
     }
   }
@@ -45,7 +52,7 @@
     @include max-screen(1680px){
       width: 28.125vw;
     }
-    @include SP {
+    @include max-screen(768px) {
       // top: 34%;
       top: 24%;
       // width: calcvw(900);
@@ -57,7 +64,7 @@
       // width: calcvw(281);
       width: 28.125vw;
       height: auto;
-      @include SP {
+      @include max-screen(768px) {
         // width: calcvw(900);
         // width: 91.46666667vw;
         width: 50vw;
@@ -80,7 +87,7 @@
     @include max-screen(1680px){
       font-size: 0.9375vw;
     }
-    @include SP {
+    @include max-screen(768px) {
       @include font-size(10);
       bottom: 40px;
     }
@@ -101,7 +108,7 @@
       font-size: 0.9375vw;
       bottom: 10.46875vw; 
     }
-    @include SP {
+    @include max-screen(768px) {
       @include font-size(10);
     }
   }

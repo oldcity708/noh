@@ -14,6 +14,9 @@
     @include max-screen(1680px) {
       margin-top: -8.59375vw;
     }
+    @include max-screen(1360px){
+      cursor: pointer;
+    }
     @include max-screen(768px) {
       margin-top: -20px;
       border-radius: 16px;
@@ -147,5 +150,8 @@
   transition: transform 0.3s;/*アニメーションの秒数指定*/
   &.active {
     transform: scale(1);
+  }
+  @include max-screen(1360px){
+    display: none;
   }
 }

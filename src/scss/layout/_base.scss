@@ -28,13 +28,13 @@ $proxima: "proxima-nova", sans-serif;
  * !!! ブレークポイント !!!
  */
 @mixin PC {
-  @include min-screen(1025px) {
+  @include min-screen(1080px) {
     @content;
   }
 }
 
 @mixin SP {
-  @include max-screen(1024px) {
+  @include max-screen(1079px) {
     @content;
   }
 }
@@ -223,20 +223,19 @@ body {
 
 main {
   opacity: 0;
-  transform: translate(0,30px);
-  // // padding-top: 50px;
-  // position: relative;
-  // // bottom: -50px;
-  transition: .6s;
-  // overflow: hidden;
+  transition: opacity 1.2s;
   &.active {
     opacity: 1;
-    // bottom: 0;
-    // padding-top: 0;
-    transform: translate(0,0px);
   }
   @include SP {
     overflow: hidden;
+  }
+  > section {
+    transform: translate(0, 40px);
+    transition: transform 1s, opacity 1.2s;
+    &.active {
+      transform: translate(0);
+    }
   }
 }
 

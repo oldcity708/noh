@@ -1,42 +1,30 @@
 .loading {
-  width: 100vw;
-  // height: 100vh;
-  padding-top: 60.95238095%;
-  // background: #000;
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 104;
-  @include SP {
-    padding-top: 120.53333333%;
-  }
+  opacity: 0.7;
   &__logo {
     position: absolute;
     width: 347px;
-    // top: 12.6vw;
-    top: 211.68px;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,0%);
+    transform: translate(-50%,-50%);
     @include max-screen(1680px){
       width: 20.703125vw;
-      top: 12.6vw;
     }
     @include max-screen(768px) {
-      top: 29%;
       width: 37vw;
     }
     &__logo {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      // opacity: 0;
-      // transition: 1.4s;
-      // &.show {
-      //   opacity: 1;
-      // }
-      // img {
-      //   width: 100%;
-      // }
+      width: 100%;
       svg {
         width: 48.67924528%;
         height: auto;
@@ -50,7 +38,6 @@
       margin-top: 26px;
       @include max-screen(1680px){
         width: 17.890625vw;
-        // margin-top: 1.40625vw;
         margin-top: 1.5vw;
       }
       @include max-screen(768px) {

@@ -13,7 +13,6 @@
   }
   &__ttl {
     order: 1;
-    // width: 360px;
     @include PC {
       text-align: left;
     }
@@ -66,15 +65,16 @@
       }
     }
     &__image {
-      // border-radius: 24px;
-      // border: 1px solid #4D4F5A;
-      // padding-top: 100%;
       margin-bottom: 24px;
       text-align: center;
       border: 1px solid #4D4F5A;
       border-radius: 24px;
+      overflow: hidden;
       @include SP {
         display: inline-block;
+      }
+      img {
+        border-radius: 24px;
       }
     }
     &__text {

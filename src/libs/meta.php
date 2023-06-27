@@ -9,29 +9,29 @@
 <!-- Viewport
 ======================================================================-->
 <?php
-    require_once 'ua.class.php';
-    $ua = new UserAgent();
-    // タブレット用の固定Viewport設定
-    // タブレットで閲覧した際は、$widthに設定したwidthで表示される
-    if ($ua->set() === 'tablet') :
-        $width = '1360px';
+    // require_once 'ua.class.php';
+    // $ua = new UserAgent();
+    // // タブレット用の固定Viewport設定
+    // // タブレットで閲覧した際は、$widthに設定したwidthで表示される
+    // if ($ua->set() === 'tablet') :
+    //     $width = '1360px';
 ?>
 
-<meta content="width=<?php echo $width; ?>,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+<!-- <meta content="width=<?php echo $width; ?>,initial-scale=1.0,maximum-scale=1.0" name="viewport"> -->
 
 <?php
     // スマホ端末用の固定Viewport設定
-    elseif ($ua->set() === 'mobile') :
-        $width = '375px';
+    // elseif ($ua->set() === 'mobile') :
+    //     $width = '375px';
 ?>
 
-<meta content="width=<?php echo $width; ?>,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+<!-- <meta content="width=<?php echo $width; ?>,initial-scale=1.0,maximum-scale=1.0" name="viewport"> -->
 
-<?php else: ?>
+<?php //else: ?>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
-<?php endif; ?>
+<?php //endif; ?>
 
 
 <!-- SEO

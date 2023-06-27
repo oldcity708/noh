@@ -93,11 +93,10 @@ gsap.to("#loadleft,#loadright", {
 $(function(){
   setTimeout(function(){
     $('.loading').fadeOut(300);
+    $('.mv').addClass('active');
     $('main').addClass('active');
-    // $(window).scrollTop(30);
-    // $('.mv').addClass('active');
+    $('main > section').addClass('active');
     $('.header').addClass('fadeUp');
     $('body').removeClass('fixed');
-    // $(window).scrollTop(30);
   },1800);
 });

@@ -5,7 +5,6 @@
   }
 
   &__scroll {
-    // padding: 16px 0;
     white-space: nowrap;
     overflow: hidden;
     position: relative;
@@ -18,7 +17,6 @@
       white-space: nowrap;
       animation-name: scrollEn2;
       animation-fill-mode: backwards;
-      // animation-fill-mode: both;
       animation-duration: 30s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
@@ -27,7 +25,6 @@
 
     .img {
       width: 360px;
-      // margin: 0 30px;
       margin-right: 60px;
       @include SP {
         width: 180px;
